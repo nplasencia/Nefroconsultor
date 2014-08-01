@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.madilon.nefroconsultor.MainActivity" >
+
+    <item android:id="@+id/action_documentacion"
+          android:icon="@drawable/ic_documentacion_off"
+          android:title="@string/action_documentacion"
+          app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_info"
+          android:icon="@drawable/ic_info_off"
+          android:title="@string/action_info"
+          app:showAsAction="ifRoom" />
+
+</menu>

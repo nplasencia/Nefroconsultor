@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_bitmap"
+    tools:context="com.madilon.nefroconsultor.ui.RecomendacionesActivity" >
+
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_recomendaciones_otros"
+        android:textColor="@color/windowsBackground"
+        android:textSize="@dimen/btnText"
+        android:background="@color/titleTextColor"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"/>
+	   
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecera"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</RelativeLayout>

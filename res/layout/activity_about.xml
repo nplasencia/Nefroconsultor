@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_bitmap"
+    tools:context="com.madilon.nefroconsultor.ui.AboutActivity" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_about"
+        android:textColor="@color/windowsBackground"
+        android:textSize="@dimen/btnText"
+        android:background="@color/titleTextColor"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="5dp"/>
+	
+    <TextView 
+        android:id="@+id/text_presentacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_presentacion"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosTitle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    <TextView 
+        android:id="@+id/text_presentacion_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_presentacion"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosDesc"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    <TextView 
+        android:id="@+id/text_descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_descripcion"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosTitle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    <TextView 
+        android:id="@+id/text_descripcion_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_descripcion"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosDesc"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    <TextView 
+        android:id="@+id/text_advertencias"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_advertencias"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosTitle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    <TextView 
+        android:id="@+id/text_advertencias_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_advertencias"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosDesc"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    
+    </LinearLayout>
+    
+</ScrollView>

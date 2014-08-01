@@ -1,0 +1,18 @@
+<resources>
+    <color name="windowsBackground">#FFFFFF</color>
+    <color name="actionBarBackground">#FFFFFF</color>
+    <color name="titleTextColor">#443759</color>
+    <color name="disabledColor">#796d8c</color>
+    <color name="editBorder">#796d8c</color>
+    <color name="btnCalcularBgOff">#796d8c</color>
+    <color name="btnCalcularBgOn">#afa4ba</color>
+    <color name="btnCalcularText">#FFFFFF</color>
+    <color name="otrosMotivosBackground1">#4D796d8c</color>
+    <color name="otrosMotivosBackground2">#4Db5889f</color>
+    <color name="otrosMotivosBackground3">#4Dd5a899</color>
+    <color name="resultadoMuyBueno">#cad058</color>
+    <color name="resultadoBueno">#f7d530</color>
+    <color name="resultadoRegular">#dd8734</color>
+    <color name="resultadoMalo">#be3a27</color>
+    <color name="resultadoMuyMalo">#90161a</color>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <dimen name="normalText">20sp</dimen>
+    <dimen name="btnText">23sp</dimen>
+    <dimen name="unitsText">17sp</dimen>
+    <dimen name="explanationText">15sp</dimen>
+    <dimen name="otrosMotivosTitle">18sp</dimen>
+    <dimen name="otrosMotivosDesc">15sp</dimen>
+    <dimen name="otrosMotivosMostrarBtn">15sp</dimen>
+    <dimen name="resultadoBox">33sp</dimen>
+    
+    <dimen name="mainLinearLayoutsHeight">50dp</dimen>
+    <dimen name="editWidth">90dp</dimen>
+</resources>

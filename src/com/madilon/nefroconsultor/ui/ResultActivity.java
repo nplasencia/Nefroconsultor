@@ -5,17 +5,19 @@ import java.util.ArrayList;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.TextView.BufferType;
 
 import com.madilon.nefroconsultor.R;
 import com.madilon.nefroconsultor.classes.ActionBarNefroConsultor;
 import com.madilon.nefroconsultor.classes.OtroMotivo;
 import com.madilon.nefroconsultor.commons.Globals;
 import com.madilon.nefroconsultor.enums.SexoEnum;
+import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
 
 public class ResultActivity extends ActionBarNefroConsultor {
@@ -32,14 +34,20 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		Boolean razaNegra = getIntent().getBooleanExtra(Globals.razaIntent, false);
 		
 		Boolean otros = false;
+		String otrosExplicacion = "Por ";
 		if (getIntent().hasExtra(Globals.otrosIntent)){
 			ArrayList<OtroMotivo> otrosMotivos = getIntent().getParcelableArrayListExtra(Globals.otrosIntent);
 			for(OtroMotivo otroMotivo : otrosMotivos) {
 				if (otroMotivo.isChecked()) {
 					otros = true;
-					break;
+					if (otroMotivo.getTitulo().equals("Otros")) {
+						otrosExplicacion += otroMotivo.getTitulo().toLowerCase() +" motivos y ";
+					} else {
+						otrosExplicacion += otroMotivo.getTitulo().toLowerCase() +" y ";
+					}
 				}
 			}
+			otrosExplicacion = otrosExplicacion.substring(0, otrosExplicacion.length()-3)+".";
 		}
 		
 		Double cdkEpi = obtenerCKDEPI(edad, sexo, creatinina, albuminuria, razaNegra);
@@ -51,7 +59,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		((TextView) findViewById(R.id.text_fgeckdepi_units)).setTypeface(Typefaces.SignikaRegular(this));
 		((TextView) findViewById(R.id.text_mdrd)).setTypeface(Typefaces.SignikaBold(this));
 		((TextView) findViewById(R.id.text_mdrd_units)).setTypeface(Typefaces.SignikaRegular(this));
-		((TextView) findViewById(R.id.text_clasificacion)).setTypeface(Typefaces.SignikaBold(this));
+		((TextView) findViewById(R.id.text_clasificacion)).setText(SpannableHelper.bold(this, getString(R.string.clasificacion)), BufferType.SPANNABLE);
 		
 		TextView fgecdkepi = (TextView) findViewById(R.id.text_fgeckdepi);
 		fgecdkepi.setTypeface(Typefaces.SignikaBold(this));
@@ -65,7 +73,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		result.setTypeface(Typefaces.SignikaLight(this));
 		
 		TextView recomendacionesAst = (TextView) findViewById(R.id.text_recomendaciones_asterisco);
-		recomendacionesAst.setTypeface(Typefaces.SignikaRegular(this));
+		recomendacionesAst.setTypeface(Typefaces.SignikaLight(this));
 		
 		((TextView) findViewById(R.id.cabecera2)).setTypeface(Typefaces.SignikaBold(this));
 		
@@ -105,6 +113,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			recomendacionesTitle.setText(R.string.remitirCaso2);
 		} else if (otros){
 			recomendacionesTitle.setText(R.string.remitir);
+			recomendacionesSubtitle.setText(otrosExplicacion);
 		} else if (edad > 80 && (mdrdIms >20 && mdrdIms <30)) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso1Subtitle);
@@ -112,6 +121,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		} else if (edad <=80 && (mdrdIms >30 && mdrdIms <45)) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso2Subtitle);
+			recomendacionesDesc.setTypeface(Typefaces.SignikaLight(this));
 			recomendacionesDesc.setText(R.string.noRemitirCaso2Desc);
 		} else if (albuminuria >=30 && albuminuria < 299) {
 			recomendacionesTitle.setText(R.string.noRemitir);
@@ -127,7 +137,8 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(v.getContext(), "Vamos a ver las recomendaciones", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(ResultActivity.this, RecomendacionesActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
@@ -210,9 +221,9 @@ public class ResultActivity extends ActionBarNefroConsultor {
 	private static void cambiarFondoResult (TextView caja, String estadioFg, String estadioAlbu, Double albuminuria) {
 		if (estadioFg.equals("G5") || albuminuria >= 2000) {
 			caja.setBackgroundResource(R.drawable.shape_resultado_muymalo);
-		} else if (estadioFg.equals("G4") || (estadioFg.equals("G3b") && (estadioAlbu.equals("A2") || estadioAlbu.equals("A3")))) {
+		} else if (estadioFg.equals("G4") || (estadioFg.equals("G3b") && (estadioAlbu.equals("A2")) || estadioAlbu.equals("A3"))) {
 			caja.setBackgroundResource(R.drawable.shape_resultado_malo);
-		} else if (albuminuria >=300 || (estadioFg.equals("G3a") && estadioAlbu.equals("A2"))|| (estadioFg.equals("G3b"))) {
+		} else if (albuminuria >=300 || (estadioFg.equals("G3a") && estadioAlbu.equals("A2")) || (estadioFg.equals("G3b"))) {
 			caja.setBackgroundResource(R.drawable.shape_resultado_regular);
 		} else if (estadioAlbu.equals("A2") || (estadioFg.equals("G3a") && estadioAlbu.equals("A1"))) {
 			caja.setBackgroundResource(R.drawable.shape_resultado_bueno);
@@ -227,5 +238,12 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		Intent intent = new Intent(ResultActivity.this, MainActivity.class);
 		startActivity(intent);
 		finish();
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.actionbar_result, menu);
+		return true;
 	}
 }

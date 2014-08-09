@@ -13,6 +13,5 @@
     <dimen name="otrosMotivosMostrarBtn">15sp</dimen>
     <dimen name="resultadoBox">33sp</dimen>
     
-    <dimen name="mainLinearLayoutsHeight">50dp</dimen>
     <dimen name="editWidth">90dp</dimen>
 </resources>

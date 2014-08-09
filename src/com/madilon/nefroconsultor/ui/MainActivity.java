@@ -4,8 +4,11 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -28,11 +31,21 @@ public class MainActivity extends ActionBarNefroConsultor {
 	private EditText albuminuria;
 	private EditText creatinina;
 	private CheckBox razaNegra;
+	private Button sexoMasculino;
+	private Button sexoFemenino;
 	private ArrayList<OtroMotivo> otrosMotivos;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		SharedPreferences userPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+		if (!userPrefs.getBoolean(Globals.condicionesPreferences, false)){
+			Intent intent = new Intent(MainActivity.this, CondicionesActivity.class);
+			startActivity(intent);
+			finish();
+		}
+		
 		setContentView(R.layout.activity_main);
 		
 		((TextView) findViewById(R.id.text_edad)).setTypeface(Typefaces.SignikaBold(this));
@@ -46,8 +59,8 @@ public class MainActivity extends ActionBarNefroConsultor {
 		((TextView) findViewById(R.id.text_raza)).setTypeface(Typefaces.SignikaBold(this));
 		((TextView) findViewById(R.id.text_otros)).setTypeface(Typefaces.SignikaBold(this));
 		
-		final Button sexoMasculino = (Button) findViewById(R.id.btn_masculino);
-		final Button sexoFemenino = (Button) findViewById(R.id.btn_femenino);
+		sexoMasculino = (Button) findViewById(R.id.btn_masculino);
+		sexoFemenino = (Button) findViewById(R.id.btn_femenino);
 		sexoMasculino.setOnClickListener(activado(SexoEnum.MASCULINO));
 		sexoFemenino.setOnClickListener(activado(SexoEnum.FEMENINO));
 		
@@ -145,13 +158,20 @@ public class MainActivity extends ActionBarNefroConsultor {
 		} else if (sexo == null){
 			Toast.makeText(context, "Debe seleccionar un Sexo para el paciente", Toast.LENGTH_SHORT).show();
 		} else if (creatinina.getText().toString().equals("0")||creatinina.getText().toString().equals("")) {
-			Toast.makeText(context, "El valor Creatina es incorrecto", Toast.LENGTH_SHORT).show();
-		} else if (albuminuria.getText().toString().equals("0")||albuminuria.getText().toString().equals("")) {
-			Toast.makeText(context, "El valor Albuminuria es incorrecto", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, "El valor Creatinina es incorrecto", Toast.LENGTH_SHORT).show();
 		} else {
+			if (albuminuria.getText().toString().equals("0")||albuminuria.getText().toString().equals(""))
+				albuminuria.setText("0");
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.actionbar_main, menu);
+		return true;
 	}
 	
 	@Override

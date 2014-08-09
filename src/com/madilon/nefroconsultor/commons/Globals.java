@@ -12,4 +12,8 @@ public class Globals {
 	public static String razaIntent = "RAZANEGRA";
 	public static String otrosIntent = "OTROS";
 	
+	/**
+	 * Constantes de las preferences
+	 */
+	public static String condicionesPreferences = "CONDICIONES";
 }

@@ -5,6 +5,8 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="8dp"
+    android:paddingEnd="8dp"
+    android:paddingStart="@dimen/activity_horizontal_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
     tools:context="com.madilon.nefroconsultor.ui.OtrosActivity" >
@@ -38,15 +40,17 @@
 	
     <Button
         android:id="@+id/btn_mostrarMas"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="20dp"
-        android:layout_gravity="right"
         android:background="@null"
+        android:drawableStart="@drawable/btn_mostrarmas"
         android:drawableLeft="@drawable/btn_mostrarmas"
         android:drawablePadding="5dp"
         android:text="@string/mostrarMas"
         android:textColor="@color/titleTextColor"
         android:textSize="@dimen/otrosMotivosMostrarBtn"
+        android:layout_gravity="bottom|end"
+        android:gravity="start"
         android:layout_marginTop="-5dp" />
     
     <TextView
@@ -55,19 +59,22 @@
         android:layout_height="wrap_content"
         android:textColor="@color/titleTextColor"
         android:textSize="@dimen/otrosMotivosDesc"
+        android:layout_marginTop="5dp"
         android:visibility="gone"/>
     
     <Button
         android:id="@+id/btn_mostrarMenos"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="20dp"
         android:text="@string/mostrarMenos"
         android:textColor="@color/titleTextColor"
         android:textSize="@dimen/otrosMotivosMostrarBtn"
         android:drawableLeft="@drawable/btn_mostrarmenos"
+        android:drawableStart="@drawable/btn_mostrarmenos"
         android:drawablePadding="5dp"
         android:background="@null"
-        android:layout_gravity="right"
+        android:layout_gravity="bottom|end"
+        android:gravity="start"
         android:visibility="gone"/>
 
 </LinearLayout>

@@ -2,17 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="8dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:orientation="vertical">
 	
     <LinearLayout
-        android:id="@+id/layout_motivo_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_otrosmotivos1"
+        android:paddingRight="8dp"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
         android:orientation="vertical">
         
         <TextView
@@ -23,34 +20,33 @@
 	        android:textColor="@color/titleTextColor"
 	        android:textSize="@dimen/otrosMotivosTitle"
 	        android:gravity="center_vertical"
-	        android:lineSpacingMultiplier="0.9"
-	        android:lines="2"
 	        android:text="Revisar hábitos higiénico-dietéticos. Actitudes y estilo de vida." />
 	    
         <Button
-	        android:id="@+id/btn_mostrarMas"
-	        android:layout_width="wrap_content"
-	        android:layout_height="20dp"
-	        android:layout_gravity="bottom|right"
-	        android:background="@null"
-	        android:drawableLeft="@drawable/btn_mostrarmas"
-	        android:drawablePadding="5dp"
-	        android:text="@string/mostrarMas"
-	        android:textColor="@color/titleTextColor"
-	        android:textSize="@dimen/otrosMotivosMostrarBtn"
-	        android:layout_marginTop="-5dp" />
+            android:id="@+id/btn_mostrarMas"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/btn_mostrarmas"
+            android:drawablePadding="5dp"
+            android:text="@string/mostrarMas"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/otrosMotivosMostrarBtn"
+            android:layout_gravity="bottom|right"
+	        android:gravity="left"/>
         
         <Button
-	        android:id="@+id/btn_mostrarMenos"
-	        android:layout_width="wrap_content"
-	        android:layout_height="20dp"
-	        android:text="@string/mostrarMenos"
-	        android:textColor="@color/titleTextColor"
-	        android:textSize="@dimen/otrosMotivosMostrarBtn"
-	        android:drawableLeft="@drawable/btn_mostrarmenos"
-	        android:drawablePadding="5dp"
-	        android:background="@null"
-	        android:layout_gravity="bottom|right"
+            android:id="@+id/btn_mostrarMenos"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/btn_mostrarmenos"
+            android:drawablePadding="5dp"
+            android:text="@string/mostrarMenos"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/otrosMotivosMostrarBtn"
+            android:layout_gravity="bottom|right"
+	        android:gravity="left"
 	        android:visibility="gone"/>
         
     </LinearLayout>
@@ -59,8 +55,11 @@
         android:id="@+id/descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
         android:textColor="@color/titleTextColor"
         android:textSize="@dimen/otrosMotivosDesc"
+        android:layout_marginTop="5dp"
         android:visibility="gone"/>
     
 </LinearLayout>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_main_bitmap"
-    tools:context="com.madilon.nefroconsultor.ui.OtrosActivity" >
+    tools:context="com.madilon.nefroconsultor.ui.ResultActivity" >
 
     <TextView
         android:id="@+id/cabecera1"
@@ -45,6 +45,7 @@
 	            android:id="@+id/text_fgeckdepi_units"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
+	            android:layout_marginStart="5dp"
 	            android:layout_marginLeft="5dp"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/explanationText"
@@ -69,6 +70,7 @@
 	            android:id="@+id/text_mdrd_units"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
+	            android:layout_marginStart="5dp"
 	            android:layout_marginLeft="5dp"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/explanationText"
@@ -80,7 +82,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/titleTextColor"
-            android:text="@string/clasificacion"
             android:gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:textSize="@dimen/explanationText"/>
@@ -185,7 +186,8 @@
 	            android:layout_height="wrap_content"
 	            android:layout_marginTop="5dp"
 	            android:textColor="@color/titleTextColor"
-	            android:textSize="@dimen/otrosMotivosTitle"/>
+	            android:textSize="@dimen/otrosMotivosTitle"
+	            android:visibility="gone"/>
 	        
 	        <TextView 
 	            android:id="@+id/text_recomendaciones_casoA2"

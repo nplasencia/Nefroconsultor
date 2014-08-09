@@ -3,6 +3,8 @@ package com.madilon.nefroconsultor.adapters;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,9 +15,11 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
+import android.widget.TextView.BufferType;
 
 import com.madilon.nefroconsultor.R;
 import com.madilon.nefroconsultor.classes.OtroMotivo;
+import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
 
 public class OtrosMotivosItemAdapter extends BaseAdapter {
@@ -42,30 +46,36 @@ public class OtrosMotivosItemAdapter extends BaseAdapter {
 		return items.get(position).getPosicion();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View vi=convertView;
 
 		if(convertView == null) {
 			vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.otromotivo, parent, false);
-			vi.setBackground(context.getResources().getDrawable(R.drawable.shape_otrosmotivos1));
 		}
 		
 		final OtroMotivo item = items.get(position);
-		
+		Drawable drawable = context.getResources().getDrawable(R.drawable.shape_otrosmotivos1);
 		switch (position % 3) {
 			case 0:
-				vi.setBackground(context.getResources().getDrawable(R.drawable.shape_otrosmotivos1));
+				drawable = context.getResources().getDrawable(R.drawable.shape_otrosmotivos1);
 				break;
 			case 1:
-				vi.setBackground(context.getResources().getDrawable(R.drawable.shape_otrosmotivos2));
+				drawable = context.getResources().getDrawable(R.drawable.shape_otrosmotivos2);
 				break;
 			case 2:
-				vi.setBackground(context.getResources().getDrawable(R.drawable.shape_otrosmotivos3));
+				drawable = context.getResources().getDrawable(R.drawable.shape_otrosmotivos3);
 				break;
 			default:
 				break;
 		}
+		
+		if (Build.VERSION.SDK_INT >= 16) { 
+		    vi.setBackground(drawable); 
+		} else { 
+		    vi.setBackgroundDrawable(drawable); 
+		} 
 		
 		CheckBox check = (CheckBox) vi.findViewById(R.id.check);
 		check.setChecked(item.isChecked());
@@ -83,7 +93,7 @@ public class OtrosMotivosItemAdapter extends BaseAdapter {
 
 		final TextView descripcion = (TextView) vi.findViewById(R.id.descripcion);
 		descripcion.setTypeface(Typefaces.SignikaRegular(context));
-		descripcion.setText(item.getDescripcion());
+		descripcion.setText(SpannableHelper.applyTags(item.getDescripcion(), context), BufferType.SPANNABLE);
 		
 		final Button buttonMas = (Button) vi.findViewById(R.id.btn_mostrarMas);
 		buttonMas.setTypeface(Typefaces.SignikaRegular(context));

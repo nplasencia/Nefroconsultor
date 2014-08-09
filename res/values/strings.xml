@@ -2,11 +2,12 @@
 <resources>
 
     <string name="app_name">NefroConsultor</string>
-    <string name="hello_world">Hello world!\n bitch</string>
+    <string name="hello_world">Hello world!</string>
     <!-- Action bar strings -->
     <string name="action_documentacion">Documentación</string>
     <string name="action_info">Acerca de</string>
     <string name="action_email">Sugerencias</string>
+    <string name="action_refresh">Reiniciar datos</string>
 
     <!-- Main activity -->
     <string name="defaultValue">0</string>
@@ -24,55 +25,184 @@
     
     <!-- Otros motivos -->
     <string name="title_activity_otros">OTROS MOTIVOS</string>
-    <string name="explicacionMotivo2">"Pacientes que presenten progresión renal (> 5 ml/min/1.73m<sup><small>2</small></sup>/año)."</string>
+    <string name="tituloMotivo1">Deterioro agudo de la función renal</string>
+    <string name="explicacionMotivo1" formatted="false">Deterioro agudo en la función renal (caída del FGe > 25&#37;) en menos de un mes o un incremento de la creatinina sérica > 25&#37;
+        en menos de 1 mes descartados factores exógenos (diarrea, vómitos, depleción por diuréticos en tratamiento con IECAs, ARA II o inhibidores directos de la renina).</string>
+    <string name="tituloMotivo2">Deterioro progresivo de la función renal</string>
+    <string name="explicacionMotivo2">Pacientes que presenten progresión renal (&gt; 5 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>/año).</string>
+    <string name="tituloMotivo3">Hipertensión arterial resistente</string>
+    <string name="explicacionMotivo3">ERC e HTA resistente refractaria al tratamiento (> 140/90 mmHg) con tres fármacos a plena dosis, uno de ellos diurético.</string>
+    <string name="tituloMotivo4">Alteraciones del potasio sérico</string>
+    <string name="explicacionMotivo4">Alteraciones en la concentración sérica de potasio (> 5,5 mmol/L o &lt; 3,5 mmol/L sin recibir diuréticos).</string>
+    <string name="tituloMotivo5">Anemia asociada a ERC</string>
+    <string name="explicacionMotivo5">Anemia: Hb &lt; 10,5 g/dL con ERC a pesar de corregir ferropenia (índice de saturación de la 
+        transferrina ISAT > 20&#37; y ferritina > 100 ng/mL).</string>
+    <string name="tituloMotivo6">Hematuria no urológica asociada a proteinuria</string>
+    <string name="explicacionMotivo6">La presencia en el sedimento urinario de hematuria y/o leucocituria durante más de tres meses, una vez se ha descartado 
+        la causa urológica o la infección de orina (incluida la tuberculosis urinaria), pueden ser indicio de glomerulonefritis, pielonefritis o nefritis 
+        túbulo-intersticiales crónicas.</string>
+    <string name="tituloMotivoOtros">Otros:</string>
+    <string name="explicacionMotivoOtros">
+         • Sospecha de causas genéticas de ERC.\n
+		• Litiasis renal con más de 4 episodios de cólicos nefríticos al año y/o que precisen 
+        realización de un estudio metabólico (historia familiar de litiasis, presencia de litiasis bilateral, enfermedades inflamatorias intestinales, diarrea 
+        crónica o síndromes de malabsorción, historia de cirugía bariátrica, presencia de nefrocalcinosis, etc.).</string>
     <string name="mostrarMas">mostrar más</string>
     <string name="mostrarMenos">ocultar</string>
     
 	<!-- Resultados -->
 	<string name="title_activity_result">RESULTADOS</string>
-	<string name="fgecdk">FGe CKD EPI %1$.2f</string>
-	<string name="mdrd">FGe MDRD-IDMS %1$.2f</string>
+	<string name="fgecdk">FGe CKD EPI &#37;1$.2f</string>
+	<string name="mdrd">FGe MDRD-IDMS &#37;1$.2f</string>
 	<string name="units">ml/min/1,73m<sup><small>2</small></sup></string>
-	<string name="clasificacion">Clasificación pronóstica de ERC según KDIGO:</string>
+	<string name="clasificacion">Clasificación pronóstica según KDIGO:</string>
 	<string name="result">ERC Estadio</string>
 	<string name="resultAst">ERC* Estadio</string>
 	<string name="recomendaciones">RECOMENDACIONES</string>
 	<string name="remitir">REMITIR AL ESPECIALISTA EN NEFROLOGÍA</string>
-	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG en 2 determinaciones durante al menos 3 meses.</string>
+	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG &lt; 30 ml/min/1,73m<sup><small>2</small></sup> en 2 determinaciones durante al menos 3 meses.</string>
 	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado albuminuria > 300 mg/g en al menos 2 ocasiones durante al menos 3 meses.</string>
 	<string name="noRemitir">SEGUIMIENTO POR MÉDICO DE AP</string>
-	<string name="noRemitirCaso1Subtitle">Remitir a nefrología si existe progresión renal, albuminuria > 300 mg/g, existen signos de alarma o existe planteamiento de tratamiento sustitutivo renal.</string>
+	<string name="noRemitirCaso1Subtitle">En pacientes mayores de 80 años con FGe 20&#8211;30 ml/min/1.73m<sup><small>2</small></sup> se recomienda remitir a nefrología si existe progresión renal, albuminuria > 300 mg/g, existen signos de alarma o existe planteamiento de tratamiento sustitutivo renal.</string>
 	<string name="noRemitirCaso1Desc">Dado que la progresión de la enfermedad renal crónica en población anciana, es muy poco frecuente se puede aceptar que los 
 	    pacientes mayores de 80 años con función renal estable o con lento deterioro de la misma (&lt; 5 ml/min/1.73m<sup><small>2</small></sup>/año) sin proteinuria, 
 	    ni anemia o signos de alarma, pueden llevar seguimiento con actitud conservadora en atención primaria.\n\n
 	    En el mismo sentido pacientes ancianos con ERC estadio 5 con expectativa de vida corta (&lt; 6 meses) mala situación funcional (dependencia de las actividades 
 	    de la vida diaria, demencia,..), comorbilidad asociada grave o que no acepten diálisis podrán ser subsidiarios de tratamiento paliativo bien en atención 
 	    primaria o compartido con Nefrología.</string>
-    <string name="noRemitirCaso2Subtitle">Deberá realizarse una monitorización más frecuente (cada 3-6 meses) remitiéndose a Nefrología solo en caso de progresión 
+    <string name="noRemitirCaso2Subtitle">En pacientes menores de 70 años con FGe 30&#8211;45 ml/min/1.73m<sup><small>2</small></sup> deberá realizarse una monitorización más frecuente (cada 3-6 meses) remitiéndose a Nefrología solo en caso de progresión 
         de la albuminuria en dos controles consecutivos o cociente albúmina/creatinina cercano a 300 mg/g.</string>
     <string name="noRemitirCaso2Desc">En algunas guías se considera que en este estadio tendría criterio de derivación a Atención Especializada.</string>
     <string name="noRemitirCaso3Subtitle">Confirmar la presencia de albuminuria moderada en al menos 2 ocasiones durante al menos 3 meses. Se recomienda un control 
         de factores de riesgo cardiovascular.</string>
     <string name="noRemitirCaso4Subtitle">Si diabetes mellitus, hipertensión arterial o &gt; 60 años, cribado de enfermedad renal crónica anual mediante determinación 
         del FG y albuminuria.</string>
-    <string name="text_recomendaciones_asterisco">Se considera ERC si existe lesión renal (presencia de anormalidades estructurales o funcionales del riñón que puedan provocar potencialmente un 
+    <string name="text_recomendaciones_asterisco">* Se considera ERC si existe lesión renal (presencia de anormalidades estructurales o funcionales del riñón que puedan provocar potencialmente un 
         descenso del FG) durante al menos tres meses. Si no es así se considera “FG disminuido sin ERC”.</string>
-   	<string name="text_recomendaciones_casoA2">La presencia de albumunuria de forma persistente es un signo no sólo de lesión renal, sino que muchas veces es signo 
-   	    de “daño sistémico” más allá del riñón. Se trata de un marcador importante e independiente de riesgo cardiovascular global (disfunción endotelial, remodelado 
+   	<string name="text_recomendaciones_casoA2">La presencia de albuminuria de forma persistente es un signo no sólo de lesión renal, sino que muchas veces es signo 
+   	    de “daño sistémico” más allá del riñón. Se trata de un marcador importante e independiente de riesgo cardiovascular global (disfunción endotelial, remodelado 
    	    arterial) y no únicamente un marcador de enfermedad renal.</string>
-   	<string name="text_recomendaciones_casoA2_elena">La presencia única de albuminuria, sin ninguna otra manifestación de daño renal, se puede detectar en otras p
-   	    atologías (obesidad, tabaquismo, dermatitis, artritis, etc. Así mismo, elevaciones transitorias de la excreción de albúmina se pueden dar en presencia de 
-   	    fiebre, infección, ejercicio físico intenso, insuficiencia cardiaca, inflamación articular inespecífica, HbA1c > 8%, PA > 160/100 mmHg y LDL > 120 mg/dL.
+   	<string name="text_recomendaciones_casoA2_elena">\nLa presencia única de albuminuria, sin ninguna otra manifestación de daño renal, se puede detectar en otras 
+   	    patologías (obesidad, tabaquismo, dermatitis, artritis, etc). Así mismo, elevaciones transitorias de la excreción de albúmina se pueden dar en presencia de 
+   	    fiebre, infección, ejercicio físico intenso, insuficiencia cardiaca, inflamación articular inespecífica, HbA1c > 8&#37;, PA > 160/100 mmHg y LDL > 120 mg/dL.
    	</string>
 	<string name="btnRecomendaciones">Otras recomendaciones</string>
 	
 	<!-- Otras recomendaciones -->
 	<string name="title_recomendaciones_otros">OTRAS RECOMENDACIONES</string>
+	<string name="recomendacion1title">Revisar hábitos higiénico-dietéticos. Actitudes y estilo de vida.</string>
+	<string name="recomendacion1txt">1.- Hábitos dietéticos:\n\n
+	    Orientar al paciente sobre el tipo de dieta a seguir según el FG:\n\n
+		- ERC 1-3: Sólo se recomienda dieta hiposódica en caso de HTA.\n
+		- ERC 4-5: Recomendaciones dietéticas sobre sodio, fósforo y potasio, &lt;light>limitando los mismos en la dieta, si procede. Así mismo, en general, 
+		se recomienda evitar dietas ricas en proteínas y suplementos alimenticios/dietéticos, salvo los formulados específicamente para esta población.&lt;/light>\n
+		- En todos, se recomienda evitar el sobrepeso u obesidad, teniendo en cuenta que las necesidades energéticas son similares a la población general.\n\n
+		2.- Abstención del hábito tabáquico.\n\n
+	    - En pacientes con enfermedad renal parece segura la utilización de terapia de sustitución de nicotina (parches, chicles, caramelos) y su asociación 
+	    con Bupropion a dosis más bajas de la habitual (150 mg/24h) en fases avanzadas de la enfermedad. El uso de Vareniclina a dosis habituales parece seguro 
+	    e igualmente que con Bupropion se pueden utilizar a mitad de dosis (1 mg/24h) que en población general.\n\n
+	    3.- La ingesta moderada de alcohol no se considera perjudicial.\n\n
+	    4.- Ejercicio físico: Como norma general se recomienda 30-60 minutos de ejercicio moderado 4 a 7 días por semana.
+	</string>
+	<string name="recomendacion2title">Control de la Presión Arterial.</string>
+	<string name="recomendacion2txt">Controlar la PA y ajustar el tratamiento para conseguir el objetivo de PA &lt; 140/90 mmHg en presencia de excreción urinaria 
+	    de albumina normal. En presencia de albuminuria (> 30 mg/g), se sugiere un objetivo de presión arterial más estricto: ≤ 130/80 mmHg. En la mayoría de los 
+	    casos será necesario asociar 2 fármacos o más para alcanzar estos objetivos. En pacientes de edad avanzada esta medida será objeto de una prudente y 
+	    cuidada individualización. &lt;light>Así mismo, si existe albuminuria moderada (estadios A2 y A3) el paciente debe recibir como antihipertensivo un 
+	    IECA o ARAII, si no existe contraindicación, y con los controles adecuados.&lt;/light>
+	</string>
+	
+	<string name="recomendacion3title">Control glucémico en los pacientes diabéticos.</string>
+	<string name="recomendacion3txt" formatted="false">&lt;light>Como objetivo general en los pacientes con DM2 y ERC se recomienda una HbA1c &lt; 7&#37;, aunque cada vez se enfatiza más en 
+	    la necesidad de individualizar los objetivos de HbA1c en función de las características clínicas y psicosociales del paciente. En los pacientes con DM2 
+	    de corta evolución, sin comorbilidad importante asociada, con bajo riesgo de hipoglucemia y con buena expectativa de vida, es recomendable un control 
+	    glucémico más intensivo, especialmente si presentan microalbuminuria. Por el contrario, en pacientes con DM2 de larga duración, con comorbilidad importante, 
+	    marcado riesgo de episodios de hipoglucemia, alto riesgo vascular o corta expectativa de vida se recomienda un control glucémico menos intensivo.\n\n
+	    Con respecto al tratamiento de la DM2 en la ERC:&lt;/light>\n
+	    • Reducir la dosis de &lt;b>metformina&lt;/b> cuando el FG esté entre 30 y 45 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> y no 
+	    utilizarla cuando sea inferior a 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n
+	    • Suspender temporalmente la &lt;b>metformina&lt;/b> ante circunstancias que pongan en riesgo la función renal (vómitos, diarrea, radiocontrastes, cirugía 
+	    mayor, uso de AINEs o diuréticos), dado el riesgo de acidosis láctica.\n
+	    • La &lt;b>repaglinida&lt;/b> puede utilizarse con cualquier grado de insuficiencia renal, incluso en pacientes en diálisis. Sin embargo es recomendable 
+	    iniciar el tratamiento con una dosis baja (0.5 mg).\n
+	    • Las gliptinas (&lt;b>inhibidores de la DPP4&lt;/b>) son fármacos que han demostrado ser eficaces y seguros en pacientes con ERC. Requieren ajuste de dosis con 
+	    FG &lt; 50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> a excepción de la linagliptina, y aunque pueden emplearse en casos de ERC avanzada o terminal, la experiencia de uso en estos casos 
+	    es aún limitada.\n
+	    • La &lt;b>insulina&lt;/b> se puede usar en cualquier estadio de ERC, teniendo en cuenta que con FG 10&#8211;50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> 
+	    es preciso reducir al 75&#37; de la dosis basal, y si el FG &lt; 10 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> se reducirá al 50&#37; de la dosis prediálisis, siempre 
+	    con una monitorización estrecha de las glucemias.\n
+	    • El riesgo de hipoglucemia por &lt;b>sulfonilureas&lt;/b> se incrementa en pacientes con ERC, por lo que en general, su uso no es recomendable, y debería 
+	    limitarse a pacientes con FG > 45 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n
+	    • Aunque la &lt;b>pioglitazona&lt;/b>puede utilizarse en cualquier grado de ERC, sus efectos adversos (edema, insuficiencia cardiaca, fracturas, riesgo de 
+	    carcinoma de vejiga) limitan su indicación en estos pacientes. Se recomienda emplearla con precaución en pacientes con FG &lt; 60 ml/min/1.73m
+	    &lt;sup>&lt;small>2&lt;/small>&lt;/sup> y evitarla cuando el FG &lt; 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n
+	    • Existe poca experiencia de uso de los &lt;b>GLP1-RA&lt;/b>en pacientes con ERC, y los efectos adversos gastrointestinales pueden ser más frecuentes 
+	    en estos pacientes. En pacientes con FG entre 30-60 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, puede administrarse exenatida con una reducción 
+	    del 50&#37; de la dosis.
+	</string>
+	<string name="recomendacion4title">Tratamiento de la dislipemia.</string>
+	<string name="recomendacion4txt">- Los pacientes con ERC deben considerarse de alto riesgo cardiovascular, siendo de muy alto riesgo cardiovascular si 
+	    FG &lt; 60 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n\n
+	    - Las &lt;b>estatinas&lt;/b> son el tratamiento de elección. No requieren ajuste de dosis, salvo en casos de ERC 3-5 y solamente para aquellas de 
+	    eliminación renal. En estos casos son preferibles aquellas con menor excreción renal (atorvastatina, fluvastatina y pitavastatina). Dentro de este 
+	    grupo fluvastatina y pitavastatina son las que menos interacciones farmacológicas presentan, en caso de paciente polimedicados.\n\n
+	    - En pacientes con FG &lt; 60 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, la dosis de &lt;b>fenobitrato&lt;/b> debe reducirse a la mitad, y no se aconseja su uso 
+	    si el FG &lt; 50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>. Para pacientes con en monoterapia hipolilpemiante, se aconseja &lt;b>gemfibrozilo&lt;/b>. La dosis 
+	    habitual es de 600 mg/día, y puede utilizarse en pacientes con FG entre 15-59 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, desaconsejándose su uso si 
+	    el FG es &lt; 15 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n\n
+	    - &lt;b>Ezetimiba&lt;/b> no requiere ajuste de dosis en insuficiencia renal.\n\n
+		- El uso de &lt;b>ácidos grasos omega-3&lt;/b> es una alternativa para el tratamiento de la hipertrigliceridemia.\n\n
+		- El objetivo terapéutico en el paciente con ERC (FG &lt; 60 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>) es conseguir una concentración de LDL &lt; 
+	    70 mg/dL o una reducción del 50&#37; si el objetivo previo no es alcanzable, &lt;light>siempre teniendo en cuenta que estos objetivos se deben individualizar 
+	    según el paciente en cuestión a criterio de su médico.&lt;/light> El fármaco de elección para esto es la estatina, sola o asociada a ezetimibe.
+	</string>
+	<string name="recomendacion5title">Valorar antiagregación.</string>
+	<string name="recomendacion5txt">Individualizar el tratamiento con antiagregantes. Indicado según las guías KDIGO en pacientes con ERC con riesgo de 
+	    complicaciones ateroscleróticas siempre y cuando su riesgo de sangrado no supere el beneficio esperado. No deberá superarse la dosis de 100 mg/día de ácido 
+	    acetilsalicílico.</string>
+	<string name="recomendacion6title">Tratamiento de la hiperuricemia.</string>
+	<string name="recomendacion6txt">Las guías clínicas actuales no recomiendan el tratamiento de la hiperuricemia, aunque algunos autores recomiendan el 
+	    tratamiento de la hiperuricemia asintomática con alopurinol sólo en los pacientes con ERC, especialmente con concentraciones de ácido úrico mayor de 
+	    8 mg/dL.\n\nEl uso de &lt;b>alopurinol&lt;/b> junto a diuréticos tiazídicos aumenta el riesgo de hipersensibilidad especialmente en paciente con 
+	    insuficiencia renal. &lt;light>No obstante, no es necesario ajustarlo a función renal, aunque es recomendable iniciar el tratamiento 
+	    con dosis bajas de no más de 100 mg/día.&lt;/light>\n\n
+	    La &lt;b>colchicina&lt;/b> está indicada en el tratamiento del ataque agudo de gota. En pacientes con FG entre 30 y 50 ml/min/1.73m
+	    &lt;sup>&lt;small>2&lt;/small>&lt;/sup> debe reducirse la dosis. Por debajo de 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> está 
+	    contraindicado su uso.\n\n
+	    En pacientes con ERC leve o moderada, la administración de &lt;b>febuxostat&lt;/b> ha demostrado una eficacia superior y una seguridad similar al alopurinol, 
+		sin necesidad de ajustar dosis. &lt;light>Con FG &lt; 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> se recomienda usar con precaución. 
+		Evitar en pacientes con cardiopatía isquémica o insuficiencia cardiaca, así como en aquellos en tratamiento con azatioprina o mercaptopurina.&lt;/light></string>
+	<string name="recomendacion7title">Vigilar presencia de anemia.</string>
+	<string name="recomendacion7txt">Si ERC 3-5 y Hb &lt; 10,5 g/dL, estimar remisión o adelantar revisión en Nefrología para valorar tratamiento con factores 
+	    estimulantes de la eritropoyesis. &lt;light>Si existe ferropenia con ferritina &lt; 100 ng/ml, valorar tratamiento con Fe oral&lt;/light>.
+	</string>
+	<string name="recomendacion8title">Revisar la medicación, ajustando la dosis según el FG.</string>
+	<string name="recomendacion8txt">En ERC 3-5, evitar la utilización de AINEs, antidiabéticos orales de eliminación renal o a dosis no adecuadas y contrastes 
+	    yodados. &lt;light>Evitar el gadolilinio en pacientes con FG &lt; 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, ya que está contraindicado por riesgo de fibrosis 
+	    nefrogénica.\n\n
+		Si se inicia tratamiento con IECA, ARAII o IDR, recomendamos monitorizar potasio sérico y realizar un control de función renal a las 6-8 semanas, 
+		y si existe un aumento de la creatinina plasmástica superior a un 30&#37; con respecto a los niveles basales, suspender dicha medicación. Así mismo, 
+		este tipo de medicación está contraindicada en mujeres embarazadas, por lo que si se pauta a una mujer en edad fértil, se le debe recordar que debe 
+		usar métodos anticonceptivos, y suspender esta medicación con antelación, antes de planificar un embarazo.\n\n
+		Precaución en pacientes con ERC 3 en tratamiento con espironolactona, eplerenona u otros diuréticos ahorradores de potasio por riesgo de hiperpotasemia y agudización de su ERC de base, especialmente en 
+		aquellos pacientes que reciben concomitantemente tratamiento con IECA, ARAII, IDR o AINEs. Recomendamos monitorizar potasio sérico y creatinina plasmática 
+		si su uso es imprescindible. Si el potasio sérico es > 5 mEq/L y/o ERC 4-5 está contraindicado su uso.\n\n
+		Precaución con soluciones osmóticas y laxantes, especialmente si se usan como preparación para estudios endoscópicos y/o radiológicos, ya que pueden 
+		producir una depleción de volumen y agravar una enfermedad renal crónica establecida o precipitar un fracaso renal agudo.&lt;/light>
+	</string>
+	
+	<string name="recomendacion9title">Análisis de sangre y orina en cada revisión a partir de ERC 3.</string>
+	<string name="recomendacion9txt">&lt;light>En estadios 1, 2 y 3a se recomienda una frecuencia de visitas rutinarias a Atención primaria de aprox. 1 cada 6 meses, de 1 cada 3 meses 
+	    en estadio 3b y una frecuencia individualizada en estadios 4-5.&lt;/light> Se recomienda que incluya hemograma, concentración sérica de glucosa 
+	    (HbA1c si diabetes mellitus), creatinina, urea, ion sodio, ion potasio, calcio, fosfato, albúmina y colesterol. FG estimado mediante una ecuación, cociente 
+	    albúmina/creatinina determinado en la primera orina de la mañana y sedimento de orina.</string>
+	<string name="recomendacion10title">Vacunaciones indicadas.</string>
+	<string name="recomendacion10txt">Vacunación del virus de la gripe (Influenza) en estadios 3&#8211;5, VHB en estadios 4&#8211;5 y Neumococo en estadio 5.</string>
 	
 	<!-- Acerca de -->
 	<string name="title_activity_about">ACERCA DE</string>
 	<string name="title_presentacion">PRESENTACIÓN</string>
-	<string name="desc_presentacion">NEFROCONSULTOR es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario 
+	<string name="desc_presentacion"><b>NEFROCONSULTOR</b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario 
 	    de Salud y del Servicio Andaluz de Salud, que ofrecen el conocimiento derivado de la praxis médica obtenida del estudio y de la asistencia sanitaria con 
 	    pacientes, y que mediante la colaboración con profesionales de las telecomunicaciones, y a través de MADILON MEDICAL CARE S.L.P., han elaborado NEFROCONSULTOR 
 	    para mostrar dicho contenido a los profesionales del ámbito asistencial tanto hospitalario como extrahospitalario.
@@ -129,4 +259,145 @@
 	    sociedades científicas. 
 	</string>
 	
+	<!-- Condiciones generales de uso -->
+	<string name="title_condiciones">Condiciones generales</string>
+	<string name="condiciones_check">He leído y acepto las condiciones</string>
+	<string name="debes_aceptar">Debes aceptar las &lt;b>Condiciones generales&lt;/b> para poder hacer uso de &lt;b>NefroConsultor&lt;/b></string>
+	<string name="condiciones_acepto">Acepto</string>
+	
+	<string name="presentacion_title">PRESENTACIÓN</string>
+	<string name="presentacion_desc">
+	    &lt;b>NEFROCONSULTOR&lt;/b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario de Salud 
+	    y del Servicio Andaluz de Salud, que ofrecen el conocimiento derivado de la praxis médica obtenida del estudio y de la asistencia sanitaria con pacientes, 
+	    y que mediante la colaboración con profesionales de la informática y telecomunicaciones, y a través de MADILON MEDICAL CARE S.L.P., han elaborado 
+	    NEFROCONSULTOR para mostrar dicho contenido a los profesionales del ámbito asistencial tanto hospitalario como extrahospitalario.\n 
+		Por favor, lea atentamente las presentes condiciones legales, ya que la instalación de la aplicación conlleva la expresa y plena aceptación y 
+		sin reservas de todos los términos que se enuncian a continuación.
+	</string>
+	<string name="advertencias_title">ADVERTENCIAS</string>
+	<string name="advertencias_desc">
+	    Se han realizado los máximos esfuerzos para verificar la corrección, exactitud, actualidad e idoneidad de las recomendaciones, información y los cálculos 
+	    en esta aplicación. Aunque en general reflejan pautas bien establecidas de alcance internacional vigentes en el momento de la publicación de la aplicación, 
+	    éstas pueden cambiar según avanzan los conocimientos. Además, es posible que existan erratas no detectadas en la transcripción de la información. 
+	    Por ello advertimos a los usuarios que no podemos hacernos responsables de las consecuencias que puedan derivarse de errores inadvertidos en la aplicación. 
+	    Recordamos también que en aquellas situaciones clínicas sobre las que se admiten diversas pautas o que son actualmente objeto de polémica, el contenido 
+	    de la aplicación representan exclusivamente las opiniones de los autores, sin que en absoluto se niegue validez a otras que puedan diferir de las mismas.\n
+	    Por último, aconsejamos la consulta de textos especializados, publicaciones científicas periódicas y obras más extensas y detalladas cuando se requiera 
+	    ampliar la información, siendo también preciso seguir las recomendaciones y actualizaciones informativas que regularmente proporcionan las autoridades 
+	    sanitarias y las sociedades científicas.
+	</string>
+	<string name="condicionesgenerales_title">CONDICIONES GENERALES DE UTILIZACIÓN</string>
+	<string name="condicionesgenerales_desc">
+	    El presente documento tiene por objeto definir las condiciones generales del uso de la aplicación NEFROCONSULTOR propiedad de MADILON MEDICAL 
+	    CARE S.L.P. (en adelante MADILON MEDICAL CARE) provista de C.I.F B93329316, con arreglo a las siguientes
+	</string>
+	<string name="condicionestotal_title">CONDICIONES</string>
+	<string name="condicionestotal_desc">
+	    &lt;b>PRIMERA. ACUERDO DE LICENCIA DE USO DE LA APLICACIÓN&lt;/b>\n\n
+	    MADILON MEDICAL CARE dispone de todos los derechos de propiedad intelectual y de explotación de NEFROCONSULTOR, por lo que consiente al usuario para 
+	    la utilización gratuita de NEFROCONSULTOR.\n\n
+	    Esta utilización gratuita  no supone cesión de la aplicación ni de ninguno de los derechos que MADILON MEDICAL CARE ostenta sobre la misma.\n\n
+		El USUARIO respetará lo dispuesto en las normas de uso que se recogen en los Términos y Condiciones de App Store (y de Google Play).\n\n
+		Los términos de esta condición de uso gratuito serán única y exclusivamente de aplicación a esta versión de NEFROCONSULTOR, pudiendo variarse las 
+		condiciones de uso de las actualizaciones futuras o de nuevas versiones, a cuyo efecto se estará a las condiciones de uso que éstas estipulen.\n\n
+		Las condiciones de uso se mantendrán en vigor mientras MADILON MEDICAL CARE disponga, pudiendo variar en cualquier momento y sin previo aviso las 
+		condiciones de uso. Aunque la aplicación se descargue de la plataforma App Store (y de Google Play) la licencia la otorga MADILON MEDICAL CARE al USUARIO, 
+		no siendo App Store (y Google Play) responsable de la licencia ni del contenido de la misma.\n\n
+	    &lt;b>SEGUNDA. INSTALACIÓN, USO Y SOPORTE DE NEFROCONSULTOR.&lt;/b>\n\n
+	    El USUARIO podrá hacer uso de NEFROCONSULTOR en cualquier dispositivo que tenga descargada la aplicación.\n\n
+	    El único responsable del mantenimiento y soporte de NEFROCONSULTOR al USUARIO es MADILON MEDICAL CARE, no teniendo ninguna intervención la 
+	    plataforma App Store (y Google Play) que es de donde se descarga la aplicación.\n\n
+		&lt;b>TERCERA. CONDICIONES DE USO, COPIAS Y ACTUALIZACIONES O NUEVAS VERSIONES.&lt;/b>\n\n
+		NEFROCONSULTOR deberá utilizarse en el dispositivo donde se haya instalado, destinándolo el USUARIO a la satisfacción de sus necesidades profesionales 
+		de acuerdo con lo  dispuesto en la Ley de Propiedad Intelectual.\n\n
+		El USUARIO no podrá realizar modificación alguna sobre NEFROCONSULTOR.\n\n
+		El USUARIO es responsable de mantener los requisitos de sistema de su dispositivo para utilizar NEFROCONSULTOR. Cualquier alteración del dispositivo 
+		con respecto a su forma original hecha por el USUARIO u otras personas que causen el mal funcionamiento de NEFROCONSULTOR es su responsabilidad. Si el 
+		dispositivo del USUARIO requiere obtener actualizaciones, mejoras o complementos para que funcione NEFROCONSULTOR en él, el USUARIO es responsable de 
+		obtenerlos y mantenerlos bajo su responsabilidad y coste. MADILON MEDICAL CARE no será responsable del fallo de su dispositivo para satisfacer los 
+		requisitos necesarios para usar NEFROCONSULTOR.\n\n
+		El incumplimiento del USUARIO de las condiciones de uso o un uso inadecuado eximirá a MADILON MEDICAL CARE de cualquier responsabilidad que 
+		pudiera derivarse de tal incumplimiento o uso inadecuado.\n\n
+		&lt;b>CUARTA. FINALIZACIÓN DEL SERVICIO.&lt;/b>\n\n
+		MADILON MEDICAL CARE se reserva el derecho a no continuar la edición de NEFROCONSULTOR, ya sea por criterios comerciales u otras causas sobrevenidas.\n\n
+		&lt;b>QUINTA. PROPIEDAD INTELECTUAL E INDUSTRIAL.&lt;/b>\n\n
+		El USUARIO reconoce los derechos de propiedad intelectual de MADILON MEDICAL CARE sobre la aplicación, así como sobre los derechos legales de copia, 
+		patentes, marcas, imágenes, diseños industriales, diseños de textos, fotografías, imágenes, gráficos, iconos de software, los secretos comerciales y 
+		cualquier otro que pueda surgir en aplicación de estas condiciones de uso, incluida toda información o documentación que MADILON MEDICAL CARE pueda 
+		proporcionar al USUARIO.\n\n
+		Asimismo el USUARIO se compromete a no realizar volcado del contenido a algún soporte, incluyendo sistemas de recuperación de información, sin expresa 
+		autorización de MADILON MEDICAL CARE.\n\n
+		El USUARIO no podrá copiar o reproducir la aplicación. Asimismo no podrá ceder, alquilar, arrendar o de otro modo distribuir parte alguna de 
+		NEFROCONSULTOR a terceros ya sea de manera permanente o temporal. Las partes se remiten a la Ley de Propiedad Intelectual vigente para todas aquellas 
+		cuestiones no reguladas en este contrato.
+		&lt;b>SEXTA. PROTECCIÓN DE DATOS PERSONALES.&lt;/b>\n\n
+		Habida cuenta que los usuarios que se descarguen la versión gratuita de la aplicación no han de facilitar datos personales a MADILON MEDICAL CARE, 
+		no resultará de aplicación la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos de carácter personal (LOPD).\n\n
+		El USUARIO acepta que MADILON MEDICAL CARE pueda recopilar y utilizar datos técnicos acerca de su dispositivo con el fin de proporcionarle actualizaciones 
+		de la aplicación, asistencia técnica y gestión de la aplicación. Esta información no identificará personalmente al USUARIO.\n\n
+		Las obligaciones en materia de protección de los datos personales que el USUARIO pueda incorporar a NEFROCONSULTOR corresponden exclusivamente al 
+		USUARIO, en cuanto titular responsable de los ficheros que con dichos datos puedan crearse, según lo previsto en la LOPD.\n\n
+		&lt;b>SÉPTIMA. GARANTÍAS Y RESPONSABILIDAD.&lt;/b>\n\n
+		El USUARIO reconoce y acepta de forma expresa que el uso de NEFROCONSULTOR se realiza bajo su propio riesgo en relación con la calidad, el rendimiento 
+		o la precisión de la misma.\n\n
+		MADILON MEDICAL CARE no controla las condiciones en las que el USUARIO utiliza NEFROCONSULTOR por lo que no puede garantizar, y no garantiza, 
+		el rendimiento o los resultados que puedan obtenerse con la utilización del mismo.\n\n
+		MADILON MEDICAL CARE declina todo tipo de responsabilidad por el uso del contenido de NEFROCONSULTOR a pacientes, ya que NEFROCONSULTOR está enfocada a 
+		la ayuda del profesional del ámbito sanitario, ofreciendo ejemplos de praxis médicas obtenidas del estudio de asistencias sanitarias con pacientes y 
+		añadiendo aportaciones y comentarios de profesionales del ámbito asistencial basadas en publicaciones científicas, siendo la única finalidad de 
+		NEFROCONSULTOR ofrecer como referencia de carácter general y orientativo ejemplos de praxis médicas, y en ningún caso puede sustituir ni sustituye el 
+		diagnóstico y prescripción de un facultativo médico.\n\n
+		Ya que la información clínica evoluciona constantemente y a menudo está sujeta a la interpretación y aplicación subjetiva, todos los autores, editores, 
+		revisores, colaboradores y licenciatarios de la información clínica ofrecida en NEFROCONSULTOR, manifiestan que:\n\n
+		(a) no son responsables de la actualización, integridad o la exactitud de la información clínica o la existencia de errores u omisiones, y por tanto 
+		no les es imputable consecuencia alguna que pueda resultar de la aplicación de la información clínica incluida en NEFROCONSULTOR.\n
+		(b) no ofrecen garantía alguna en cuanto a la frecuencia con la que se realizarán cambios o actualizaciones de la información clínica, debido a la 
+		naturaleza dinámica de la información clínica.\n
+		(c) igualmente se advierte que todas las decisiones deben basarse en el criterio independiente y profesional del médico actuante, con su experiencia 
+		y su juicio clínico. A título de ejemplo de lo manifestado anteriormente, sin ser un ejemplo excluyente, en relación con los medicamentos a prescribir el 
+		médico debe seguir las instrucciones como se refleja en la literatura y la información más reciente publicada por el fabricante del producto.\n
+		(d) tampoco se asume responsabilidad alguna por cualquier inexactitud de cita o de cualquier implicación que pueda surgir debido al texto de fórmulas 
+		utilizados. Se aconseja consultar cuidadosamente los materiales de instrucción e información incluidos con el embalaje de cada medicamento o agente 
+		terapéutico antes de la administración. Además, habida cuenta de los cambios en las regulaciones de las autoridades sanitarias competentes y el flujo 
+		constante de información relativa a la farmacoterapia y reacciones a medicamentos, se debe consultar el correspondiente prospecto y actualizaciones 
+		reglamentarias para cada medicamento, para cualquier cambio en las indicaciones y dosis y para nuevas advertencias y precauciones del fabricante.\n\n
+		MADILON MEDICAL CARE garantiza que NEFROCONSULTOR no contiene componentes a los que se hace referencia comúnmente como back doors, time bombs, 
+		trojan horses, worms o virus. El uso de NEFROCONSULTOR y la información clínica incluida es bajo su propio riesgo. MADILON MEDICAL CARE no garantiza 
+		que NEFROCONSULTOR y la información clínica incluida esté libre de errores y se proporciona "tal cual" sin garantía de ningún tipo. MADILON MEDICAL 
+		CARE expresamente rechaza cualquier otra representación o garantía de ningún tipo, expresa o implícita, oral o escrita, incluyendo sin limitación a 
+		cualquier garantía de comercialización, idoneidad para un propósito particular, precisión, integración, vigencia, validez, exclusividad, fallo técnico, 
+		u otras.\n\n
+		El USUARIO acepta que no se le ha dado ninguna garantía de exactitud en la información presente en NEFROCONSULTOR.\n\n
+		MADILON MEDICAL CARE no está obligada a proporcionar actualizaciones de la información clínica. MADILON MEDICAL CARE no garantiza 100% la disponibilidad 
+		o accesibilidad completa de cualquier base de datos o información clínica.\n\n
+		También se informa que pueden ocurrir errores o interrupciones en el servicio o funcionamiento local u online de NEFROCONSULTOR, y por ello MADILON MEDICAL 
+		CARE y todos los autores, editores, revisores, colaboradores y licenciatarios de la información clínica no asumen ninguna responsabilidad derivada de los 
+		mismos.\n\n
+		MADILON MEDICAL CARE no garantiza que NEFROCONSULTOR funcione en cualquier unidad electrónica. Además, el USUARIO acepta usar NEFROCONSULTOR 
+		como ayuda educativa y no para prescribir, diagnosticar o tratar una enfermedad o evento clínico, tal y como se ha descrito anteriormente.\n\n
+		&lt;b>Uso del producto.&lt;/b>\n\n
+		El USUARIO defenderá, indemnizará y mantendrá indemne a MADILON MEDICAL CARE y sus  afiliadas, directores, funcionarios, empleados, accionistas, 
+		representantes, agentes, empleados, predecesores, sucesores y cesionarios de y contra cualquier reclamación, demanda, pérdida, daño, gasto 
+		(incluyendo honorarios y costos razonables de abogados) o responsabilidad que pueda derivarse de, surja de o relacionados con su uso de NEFROCONSULTOR.\n\n
+		&lt;b>Limitación de la responsabilidad.&lt;/b>\n\n
+		En ningún caso MADILON MEDICAL CARE o todos los autores, editores, revisores, colaboradores y licenciatarios de la información clínica o sus proveedores 
+		serán responsables por cualquier daño derivado del uso o imposibilidad de uso de NEFROCONSULTOR. MADILON MEDICAL CARE no se hace responsable por cualquier 
+		pérdida de beneficios, pérdida de uso, pérdida de datos, interrupción del negocio, ni por daños indirectos, especiales, incidental, consecuente o ejemplar 
+		de ningún tipo, ya sea en virtud de este acuerdo o de otro tipo derivados de cualquier manera en conexión con NEFROCONSULTOR o este acuerdo.\n\n
+		Así mismo la plataforma de App Store (y de Google Play) no responderá frente a las posibles demandas del USUARIO en relación a la licencia 
+		(solicitud, posesión, uso y requisitos legales y reglamentarios que resulten aplicables) ni con las reclamaciones derivadas de protección del consumidor 
+		o legislación similar.\n\n
+		&lt;b>OCTAVA. LEGISLACIÓN Y JURISDICCIÓN.&lt;/b>\n\n
+		Las presentes condiciones de uso se regirán e interpretará conforme la legislación española.\n\n
+		&lt;b>NOVENA. REQUISITOS ADICIONALES REQUERIDOS POR APP STORE (Y GOOGLE PLAY)&lt;/b>\n\n
+		Ambas partes, MADILON MEDICAL CARE y el USUARIO, declaran que no están situados en un país sujeto a embargo del gobierno de los EEUU o designado por éste 
+		como país terrorista de apoyo y que así mismo ninguno aparece en las listas que dicho gobierno establece como prohibidas o restringidas. Ambas partes 
+		reconocen que App Store (y Google Play) y sus filiales son beneficiarios económicos de la venta de la aplicación en los porcentajes acordados. Así mismo 
+		se acepta por ambas partes que App Store (y Google Play) pueda exigir el cumplimiento de lo establecido en el presente contrato en lo relativo a las 
+		condiciones económicas antes mencionadas.\n\n
+		&lt;b>DÉCIMA. DATOS DE CONTACTO.&lt;/b>\n\n
+		Para cualquier consulta, pregunta, queja o reclamación por parte del USUARIO, MADILON MEDICAL CARE señala como datos de contacto los siguientes:\n\n
+		Madilon Medical Care S.L.P.\n
+		E-mail: &lt;b>madilonmedicalcare@gmail.com&lt;/b>
+	</string>
 </resources>

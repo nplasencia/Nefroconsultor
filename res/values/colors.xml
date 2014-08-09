@@ -1,5 +1,6 @@
 <resources>
     <color name="windowsBackground">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
     <color name="actionBarBackground">#FFFFFF</color>
     <color name="titleTextColor">#443759</color>
     <color name="disabledColor">#796d8c</color>

@@ -10,9 +10,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.TextView.BufferType;
 
 import com.madilon.nefroconsultor.R;
 import com.madilon.nefroconsultor.classes.Recomendacion;
+import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
 
 public class RecomendacionesItemAdapter extends BaseAdapter {
@@ -44,7 +46,7 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 		View vi=convertView;
 
 		if(convertView == null) {
-			vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.otromotivo, parent, false);
+			vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.recomendacion, parent, false);
 		}
 		
 		Recomendacion item = items.get(position);
@@ -55,7 +57,7 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 
 		final TextView descripcion = (TextView) vi.findViewById(R.id.descripcion);
 		descripcion.setTypeface(Typefaces.SignikaRegular(context));
-		descripcion.setText(item.getDescripcion());
+		descripcion.setText(SpannableHelper.applyTags(item.getDescripcion(), context), BufferType.SPANNABLE);
 		
 		final Button buttonMas = (Button) vi.findViewById(R.id.btn_mostrarMas);
 		buttonMas.setTypeface(Typefaces.SignikaRegular(context));

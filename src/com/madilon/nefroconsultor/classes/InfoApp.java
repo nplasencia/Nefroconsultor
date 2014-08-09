@@ -1,18 +1,15 @@
 package com.madilon.nefroconsultor.classes;
 
-
-public class Recomendacion {
+public class InfoApp {
 	private String titulo;
 	private String descripcion;
-	private int posicion;
 	
-	public Recomendacion(String titulo, String descripcion, int posicion) {
+	public InfoApp(String titulo, String descripcion) {
 		this.titulo = titulo;
 		this.setDescripcion(descripcion);
-		this.posicion = posicion;
 	}
 	
-	public Recomendacion() {
+	public InfoApp() {
 	}
 
 	public String getTitulo() {
@@ -27,13 +24,6 @@ public class Recomendacion {
 	}
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
-	}
-	
-	public int getPosicion() {
-		return posicion;
-	}
-	public void setPosicion(int posicion) {
-		this.posicion = posicion;
 	}
 	
 }

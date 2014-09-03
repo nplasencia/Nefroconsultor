@@ -40,7 +40,7 @@ public class ActionBarNefroConsultor extends ActionBarActivity {
 			return true;
 		}  else if (id == R.id.action_email) {
 			Intent emailIntent = new Intent(Intent.ACTION_VIEW);
-			Uri data = Uri.parse("mailto:eolidam@gmail.com?subject=[NefroConsultor] Contacto con Madilon Medical Care");
+			Uri data = Uri.parse("mailto:madilonmedicalcare@gmail.com?subject=[NefroConsultor] Contacto con Madilon Medical Care");
 			emailIntent.setData(data);
 			startActivity(Intent.createChooser(emailIntent, "Elige tu app de correo preferida"));
 			return true;

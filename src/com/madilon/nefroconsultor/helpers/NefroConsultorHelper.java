@@ -4,11 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,48 +11,7 @@ import android.content.res.AssetManager;
 import android.net.Uri;
 import android.util.Log;
 
-import com.madilon.nefroconsultor.classes.OtroMotivo;
-import com.madilon.nefroconsultor.classes.Recomendacion;
-
 public class NefroConsultorHelper {
-	public static List<OtroMotivo> getMotivosFromXmlFile(int idFile, Context context) {
-		List<OtroMotivo> otrosMotivos = new ArrayList<OtroMotivo>();
-		try {
-			XmlPullParser parser = context.getResources().getXml(idFile);
-			parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-            while (parser.next() != XmlPullParser.END_DOCUMENT) {
-                OtroMotivo otroMotivo = new OtroMotivo();
-                otrosMotivos.add(otroMotivo);
-            }
-		} catch (IOException e) {
-			e.printStackTrace();
-			return null;
-		} catch (XmlPullParserException e) {
-			e.printStackTrace();
-			return null;
-		}
-		return otrosMotivos;
-	}
-	
-	public static List<Recomendacion> getRecomendacionesFromXmlFile(int idFile, Context context) {
-		List<Recomendacion> recomendaciones = new ArrayList<Recomendacion>();
-		try {
-			XmlPullParser parser = context.getResources().getXml(idFile);
-			parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-            while (parser.next() != XmlPullParser.END_DOCUMENT) {
-                Recomendacion recomendacion = new Recomendacion();
-                recomendaciones.add(recomendacion);
-            }
-		} catch (IOException e) {
-			e.printStackTrace();
-			return null;
-		} catch (XmlPullParserException e) {
-			e.printStackTrace();
-			return null;
-		}
-		return recomendaciones;
-	}
-	
 	public static void copyOpenAssets(Context context, String newFileName, String fileNameRead) {
         AssetManager assetManager = context.getAssets();
 

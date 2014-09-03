@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
 
@@ -23,8 +24,8 @@ import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
 
 public class OtrosMotivosItemAdapter extends BaseAdapter {
-	protected Context context;
-	protected List<OtroMotivo> items;
+	private Context context;
+	private List<OtroMotivo> items;
 
 	public OtrosMotivosItemAdapter(Context context, List<OtroMotivo> items) {
 		this.context = context;
@@ -48,7 +49,7 @@ public class OtrosMotivosItemAdapter extends BaseAdapter {
 
 	@SuppressWarnings("deprecation")
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(final int position, View convertView, final ViewGroup parent) {
 		View vi=convertView;
 
 		if(convertView == null) {
@@ -71,7 +72,7 @@ public class OtrosMotivosItemAdapter extends BaseAdapter {
 				break;
 		}
 		
-		if (Build.VERSION.SDK_INT >= 16) { 
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) { 
 		    vi.setBackground(drawable); 
 		} else { 
 		    vi.setBackgroundDrawable(drawable); 
@@ -107,6 +108,9 @@ public class OtrosMotivosItemAdapter extends BaseAdapter {
 				buttonMenos.setVisibility(View.VISIBLE);
 				buttonMas.setVisibility(View.GONE);
 				descripcion.setVisibility(View.VISIBLE);
+				if (position == (items.size()-1)) {
+					((ListView) parent).setSelection(items.size()-1);
+				}
 			}
 		});
 		

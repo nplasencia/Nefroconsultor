@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
 
@@ -42,7 +43,7 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(final int position, View convertView, final ViewGroup parent) {
 		View vi=convertView;
 
 		if(convertView == null) {
@@ -71,6 +72,9 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 				buttonMenos.setVisibility(View.VISIBLE);
 				buttonMas.setVisibility(View.GONE);
 				descripcion.setVisibility(View.VISIBLE);
+				if (position == (items.size()-1)) {
+					((ListView) parent).setSelection(items.size()-1);
+				}
 			}
 		});
 		

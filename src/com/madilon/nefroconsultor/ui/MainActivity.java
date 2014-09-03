@@ -39,6 +39,12 @@ public class MainActivity extends ActionBarNefroConsultor {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		/*Calendar cal = Calendar.getInstance();
+		if (cal.get(Calendar.MONTH) > Calendar.AUGUST) {
+			Toast.makeText(this, "La versión de pruebas de NefroConsultor ha terminado", Toast.LENGTH_LONG).show();
+			finish();
+		}*/
+		
 		SharedPreferences userPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 		if (!userPrefs.getBoolean(Globals.condicionesPreferences, false)){
 			Intent intent = new Intent(MainActivity.this, CondicionesActivity.class);

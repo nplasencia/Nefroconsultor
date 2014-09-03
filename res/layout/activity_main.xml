@@ -1,10 +1,15 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.madilon.nefroconsultor.MainActivity">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/bg_main_bitmap"
-    android:orientation="vertical"
-    tools:context="com.madilon.nefroconsultor.MainActivity" >
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo"
@@ -24,8 +29,7 @@
 	    <LinearLayout
 	        android:id="@+id/layout_edad"
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal">
 	
@@ -33,7 +37,7 @@
 	            android:id="@+id/text_edad"
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="center_vertical|right"
 	            android:text="@string/edad"
@@ -72,8 +76,7 @@
 		
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal" 
 	        android:background="#00000000">
@@ -82,7 +85,7 @@
 	            android:id="@+id/text_sexo"
 	            android:layout_width="0dp"
 	            android:layout_height="wrap_content"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="right"
 	            android:text="@string/sexo"
@@ -100,7 +103,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_width="48dp"
 		            android:background="@null"
-		            android:drawableLeft="@drawable/btn_masculino_desact"
+		            android:drawableStart="@drawable/btn_masculino_desact"
 		            android:gravity="center_vertical|left"/>
 	            
 	            <!-- Se han tenido que poner las medidas para que no existan problemas en ldpi -->
@@ -110,7 +113,7 @@
 		            android:layout_width="48dp"
 		            android:background="@null"
 		            android:layout_marginLeft="17dp"
-		            android:drawableLeft="@drawable/btn_femenino_desact"
+		            android:drawableStart="@drawable/btn_femenino_desact"
 		            android:gravity="center_vertical|left"/>
 	            
 	        </LinearLayout>
@@ -118,8 +121,7 @@
 	
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal" >
 	
@@ -127,7 +129,7 @@
 	            android:id="@+id/text_creatinina"
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="center_vertical|right"
 	            android:text="@string/creatinina"
@@ -166,8 +168,7 @@
 	
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:baselineAligned="false"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal" >
@@ -175,7 +176,7 @@
 	        <LinearLayout
 	            android:layout_width="0dp"
 	            android:layout_height="wrap_content"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="center_vertical|right"
 	            android:orientation="vertical" >
@@ -232,8 +233,7 @@
 	
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal" >
 	
@@ -241,7 +241,7 @@
 	            android:id="@+id/text_raza"
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="center_vertical|right"
 	            android:text="@string/raza"
@@ -259,8 +259,7 @@
 	
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dp"
-	        android:layout_weight="1"
+	        android:layout_height="60dp"
 	        android:gravity="center_vertical"
 	        android:orientation="horizontal" >
 	
@@ -268,7 +267,7 @@
 	            android:id="@+id/text_otros"
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
-	            android:layout_marginRight="10dp"
+	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
 	            android:gravity="center_vertical|right"
 	            android:text="@string/otrosMotivos"
@@ -281,8 +280,8 @@
 	            android:layout_height="fill_parent"
 	            android:layout_weight="1"
 	            android:background="@null"
-	            android:drawableLeft="@drawable/btn_next"
-	            android:gravity="center_vertical|left"/>
+	            android:drawableStart="@drawable/btn_next"
+	            android:gravity="center_vertical|start"/>
 	        
 	    </LinearLayout>
 	    
@@ -293,7 +292,7 @@
 	        android:gravity="center_vertical|center_horizontal"
 	        android:orientation="horizontal"
 	        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        	android:layout_marginRight="@dimen/activity_horizontal_margin"
+        	android:layout_marginEnd="@dimen/activity_horizontal_margin"
 	        android:layout_marginBottom="5dp">
 	        
 		    <Button 
@@ -308,3 +307,4 @@
 		</LinearLayout>
 	</LinearLayout>
 </LinearLayout>
+</ScrollView>

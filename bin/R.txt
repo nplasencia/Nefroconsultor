@@ -311,13 +311,13 @@ int id action_bar_root 0x7f05001a
 int id action_bar_subtitle 0x7f050023
 int id action_bar_title 0x7f050022
 int id action_context_bar 0x7f05001d
-int id action_documentacion 0x7f050073
-int id action_email 0x7f050072
-int id action_info 0x7f050075
+int id action_documentacion 0x7f050074
+int id action_email 0x7f050073
+int id action_info 0x7f050076
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_refresh 0x7f050074
+int id action_refresh 0x7f050075
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -327,7 +327,8 @@ int id btn_condiciones 0x7f050044
 int id btn_femenino 0x7f05004f
 int id btn_masculino 0x7f05004e
 int id btn_mostrarMas 0x7f050070
-int id btn_mostrarMenos 0x7f050071
+int id btn_mostrarMenos 0x7f050072
+int id btn_mostrarMenosSup 0x7f050071
 int id btn_otros 0x7f05005a
 int id btn_recomendaciones 0x7f050067
 int id cabecera 0x7f05003c

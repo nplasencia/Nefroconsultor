@@ -1156,13 +1156,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_documentacion=0x7f050073;
-        public static final int action_email=0x7f050072;
-        public static final int action_info=0x7f050075;
+        public static final int action_documentacion=0x7f050074;
+        public static final int action_email=0x7f050073;
+        public static final int action_info=0x7f050076;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_refresh=0x7f050074;
+        public static final int action_refresh=0x7f050075;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1172,7 +1172,8 @@ containing a value of this type.
         public static final int btn_femenino=0x7f05004f;
         public static final int btn_masculino=0x7f05004e;
         public static final int btn_mostrarMas=0x7f050070;
-        public static final int btn_mostrarMenos=0x7f050071;
+        public static final int btn_mostrarMenos=0x7f050072;
+        public static final int btn_mostrarMenosSup=0x7f050071;
         public static final int btn_otros=0x7f05005a;
         public static final int btn_recomendaciones=0x7f050067;
         public static final int cabecera=0x7f05003c;

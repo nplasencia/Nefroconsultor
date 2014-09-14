@@ -66,10 +66,14 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 		final Button buttonMenos = (Button) vi.findViewById(R.id.btn_mostrarMenos);
 		buttonMenos.setTypeface(Typefaces.SignikaRegular(context));
 		
+		final Button buttonMenosSup = (Button) vi.findViewById(R.id.btn_mostrarMenosSup);
+		buttonMenosSup.setTypeface(Typefaces.SignikaRegular(context));
+		
 		buttonMas.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				buttonMenos.setVisibility(View.VISIBLE);
+				buttonMenosSup.setVisibility(View.VISIBLE);
 				buttonMas.setVisibility(View.GONE);
 				descripcion.setVisibility(View.VISIBLE);
 				if (position == (items.size()-1)) {
@@ -78,14 +82,18 @@ public class RecomendacionesItemAdapter extends BaseAdapter {
 			}
 		});
 		
-		buttonMenos.setOnClickListener(new OnClickListener() {
+		final OnClickListener ocultarListener = new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				buttonMenos.setVisibility(View.GONE);
+				buttonMenosSup.setVisibility(View.GONE);
 				buttonMas.setVisibility(View.VISIBLE);
 				descripcion.setVisibility(View.GONE);
 			}
-		});
+		}; 
+		
+		buttonMenos.setOnClickListener(ocultarListener);
+		buttonMenosSup.setOnClickListener(ocultarListener);
 
 		return vi;
 	}

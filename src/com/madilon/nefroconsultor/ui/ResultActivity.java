@@ -21,22 +21,29 @@ import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
 
 public class ResultActivity extends ActionBarNefroConsultor {
+	
+	Integer edad;
+	SexoEnum sexo;
+	Double creatinina;
+	Double albuminuria;
+	Boolean razaNegra;
+	ArrayList<OtroMotivo> otrosMotivos;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_result);
 		
-		Integer edad = Integer.parseInt(getIntent().getStringExtra(Globals.edadIntent));
-		SexoEnum sexo = (SexoEnum) getIntent().getSerializableExtra(Globals.sexoIntent);
-		Double creatinina = Double.parseDouble(getIntent().getStringExtra(Globals.creaIntent));
-		Double albuminuria = Double.parseDouble(getIntent().getStringExtra(Globals.albuIntent));
-		Boolean razaNegra = getIntent().getBooleanExtra(Globals.razaIntent, false);
+		edad = Integer.parseInt(getIntent().getStringExtra(Globals.edadIntent));
+		sexo = (SexoEnum) getIntent().getSerializableExtra(Globals.sexoIntent);
+		creatinina = Double.parseDouble(getIntent().getStringExtra(Globals.creaIntent));
+		albuminuria = Double.parseDouble(getIntent().getStringExtra(Globals.albuIntent));
+		razaNegra = getIntent().getBooleanExtra(Globals.razaIntent, false);
 		
 		Boolean otros = false;
 		String otrosExplicacion = "Por ";
 		if (getIntent().hasExtra(Globals.otrosIntent)){
-			ArrayList<OtroMotivo> otrosMotivos = getIntent().getParcelableArrayListExtra(Globals.otrosIntent);
+			otrosMotivos = getIntent().getParcelableArrayListExtra(Globals.otrosIntent);
 			for(OtroMotivo otroMotivo : otrosMotivos) {
 				if (otroMotivo.isChecked()) {
 					otros = true;
@@ -234,8 +241,13 @@ public class ResultActivity extends ActionBarNefroConsultor {
 	
 	@Override
 	public void onBackPressed(){
-		super.onBackPressed();
 		Intent intent = new Intent(ResultActivity.this, MainActivity.class);
+		intent.putExtra(Globals.sexoIntent, sexo);
+		intent.putExtra(Globals.edadIntent, edad.toString());
+		intent.putExtra(Globals.albuIntent, albuminuria.toString());
+		intent.putExtra(Globals.creaIntent, creatinina.toString());
+		intent.putExtra(Globals.razaIntent, razaNegra);
+		if (otrosMotivos != null) intent.putParcelableArrayListExtra(Globals.otrosIntent, otrosMotivos);
 		startActivity(intent);
 		finish();
 	}

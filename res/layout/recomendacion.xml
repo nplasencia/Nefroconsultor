@@ -36,7 +36,7 @@
 	        android:gravity="left"/>
         
         <Button
-            android:id="@+id/btn_mostrarMenos"
+            android:id="@+id/btn_mostrarMenosSup"
             android:layout_width="110dp"
             android:layout_height="20dp"
             android:background="@null"
@@ -61,5 +61,19 @@
         android:textSize="@dimen/otrosMotivosDesc"
         android:layout_marginTop="5dp"
         android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/btn_mostrarMenos"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|right"
+        android:background="@null"
+        android:drawableLeft="@drawable/btn_mostrarmenos"
+        android:drawablePadding="5dp"
+        android:gravity="left"
+        android:text="@string/mostrarMenos"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosMostrarBtn"
+        android:visibility="gone" />
     
 </LinearLayout>

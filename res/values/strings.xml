@@ -43,8 +43,13 @@
         túbulo-intersticiales crónicas.</string>
     <string name="tituloMotivoOtros">Otros:</string>
     <string name="explicacionMotivoOtros">
-         • Sospecha de causas genéticas de ERC.\n
-		• Litiasis renal con más de 4 episodios de cólicos nefríticos al año y/o que precisen 
+        • Sospecha de causas genéticas de ERC.\n\n
+        • Sospecha de poliquistosis renal. Los criterios actuales de poliquistosis renal autosómica dominante son:\n
+             \t\t\t- 15-39 años: 3 o más quistes unilaterales o bilaterales.\n
+             \t\t\t- 40-59 años: 2 o más quistes en cada riñón.\n
+             \t\t\t- 60 años o más: 4 o más quistes en cada riñón.\n
+             \t\t\t- Menos de 2 quistes en > 40 años es suficiente para excluir la enfermedad.\n\n
+        • Litiasis renal con más de 4 episodios de cólicos nefríticos al año y/o que precisen 
         realización de un estudio metabólico (historia familiar de litiasis, presencia de litiasis bilateral, enfermedades inflamatorias intestinales, diarrea 
         crónica o síndromes de malabsorción, historia de cirugía bariátrica, presencia de nefrocalcinosis, etc.).</string>
     <string name="mostrarMas">mostrar más</string>

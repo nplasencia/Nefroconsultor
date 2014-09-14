@@ -53,6 +53,22 @@
         android:gravity="start"
         android:layout_marginTop="-5dp" />
     
+    <Button
+        android:id="@+id/btn_mostrarMenosSup"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:text="@string/mostrarMenos"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/otrosMotivosMostrarBtn"
+        android:drawableLeft="@drawable/btn_mostrarmenos"
+        android:drawableStart="@drawable/btn_mostrarmenos"
+        android:drawablePadding="5dp"
+        android:background="@null"
+        android:layout_gravity="bottom|end"
+        android:gravity="start"
+        android:visibility="gone"/>
+    
+    
     <TextView
         android:id="@+id/descripcion"
         android:layout_width="wrap_content"

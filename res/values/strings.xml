@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">NefroConsultor</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="result_otros_by">Por</string>
     <!-- Action bar strings -->
     <string name="action_documentacion">Documentación</string>
     <string name="action_info">Acerca de</string>
@@ -22,6 +22,7 @@
     <string name="raza">Raza negra</string>
     <string name="otrosMotivos">Otros motivos</string>
     <string name="calcular">Calcular</string>
+    <string name="emailSubject">[NefroConsultor] Contacto con Madilon Medical Care</string>
     
     <!-- Otros motivos -->
     <string name="title_activity_otros">OTROS MOTIVOS</string>
@@ -64,6 +65,7 @@
 	<string name="result">ERC Estadio</string>
 	<string name="resultAst">ERC* Estadio</string>
 	<string name="recomendaciones">RECOMENDACIONES</string>
+	<string name="remitirVsNoRemitir">VALORAR REMITIR A NEFROLOGÍA VS. SEGUIMIENTO POR MÉDICO DE AP</string>
 	<string name="remitir">REMITIR AL ESPECIALISTA EN NEFROLOGÍA</string>
 	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG &lt; 30 ml/min/1,73m<sup><small>2</small></sup> en 2 determinaciones durante al menos 3 meses.</string>
 	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado albuminuria > 300 mg/g en al menos 2 ocasiones durante al menos 3 meses.</string>
@@ -75,11 +77,16 @@
 	    En el mismo sentido pacientes ancianos con ERC estadio 5 con expectativa de vida corta (&lt; 6 meses) mala situación funcional (dependencia de las actividades 
 	    de la vida diaria, demencia,..), comorbilidad asociada grave o que no acepten diálisis podrán ser subsidiarios de tratamiento paliativo bien en atención 
 	    primaria o compartido con Nefrología.</string>
-    <string name="noRemitirCaso2Subtitle">En pacientes menores de 70 años con FGe 30&#8211;45 ml/min/1.73m<sup><small>2</small></sup> deberá realizarse una monitorización más frecuente (cada 3-6 meses) remitiéndose a Nefrología solo en caso de progresión 
+    <string name="noRemitirCaso2Subtitle">Según el documento consenso sobre la ERC de 2012, en pacientes menores de 70 años con FGe 30&#8211;45 ml/min/1.73m<sup><small>2</small></sup> 
+        deberá realizarse una monitorización más frecuente (cada 3-6 meses) remitiéndose a Nefrología solo en caso de progresión 
         de la albuminuria en dos controles consecutivos o cociente albúmina/creatinina cercano a 300 mg/g.</string>
-    <string name="noRemitirCaso2Desc">En algunas guías se considera que en este estadio tendría criterio de derivación a Atención Especializada.</string>
+    <string name="noRemitirCaso2Desc">EN ALGUNAS GUÍAS SE CONSIDERA QUE EN ESTE ESTADIO TENDRÍA CRITERIO DE DERIVACIÓN A ATENCIÓN ESPECIALIZADA.</string>
     <string name="noRemitirCaso3Subtitle">Confirmar la presencia de albuminuria moderada en al menos 2 ocasiones durante al menos 3 meses. Se recomienda un control 
-        de factores de riesgo cardiovascular.</string>
+        de factores de riesgo cardiovascular.\n</string>
+    <string name="noRemitirCaso3Subtitle_80">\nDado que la progresión de la enfermedad renal crónica en población anciana es muy poco frecuente, se puede 
+        aceptar que los pacientes mayores de 80 años con función renal estable o con lento deterioro de la misma (&lt; 5 ml/min/1.73m<sup><small>2</small></sup>/año) 
+        sin proteinuria, ni anemia o signos de alarma, pueden llevar seguimiento con actitud conservadora en atención primaria</string>
+    <string name="noRemitirCaso3Subtitle_elena">Realizar una monitorización más frecuente de la función renal (cada 3&#8211;6 meses).</string>
     <string name="noRemitirCaso4Subtitle">Si diabetes mellitus, hipertensión arterial o &gt; 60 años, cribado de enfermedad renal crónica anual mediante determinación 
         del FG y albuminuria.</string>
     <string name="text_recomendaciones_asterisco">* Se considera ERC si existe lesión renal (presencia de anormalidades estructurales o funcionales del riñón que puedan provocar potencialmente un 
@@ -205,63 +212,76 @@
 	<string name="recomendacion10txt">Vacunación del virus de la gripe (Influenza) en estadios 3&#8211;5, VHB en estadios 4&#8211;5 y Neumococo en estadio 5.</string>
 	
 	<!-- Acerca de -->
-	<string name="title_activity_about">ACERCA DE</string>
+	<string name="title_activity_about">INFORMACIÓN</string>
 	<string name="title_presentacion">PRESENTACIÓN</string>
-	<string name="desc_presentacion"><b>NEFROCONSULTOR</b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario 
+	<string name="desc_presentacion">&lt;b>NEFROCONSULTOR&lt;/b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario 
 	    de Salud y del Servicio Andaluz de Salud, que ofrecen el conocimiento derivado de la praxis médica obtenida del estudio y de la asistencia sanitaria con 
 	    pacientes, y que mediante la colaboración con profesionales de las telecomunicaciones, y a través de MADILON MEDICAL CARE S.L.P., han elaborado NEFROCONSULTOR 
-	    para mostrar dicho contenido a los profesionales del ámbito asistencial tanto hospitalario como extrahospitalario.
+	    para mostrar dicho contenido a los profesionales del ámbito asistencial tanto hospitalario como extrahospitalario. Permite conocer la situación desde el 
+	    punto de vista renal de un paciente, si tiene enfermedad renal crónica o no, el grado de ésta, e indica si el paciente deber ser seguido por su médico de 
+	    atención primaria o remitido al especialista en Nefrología, además de hacer una serie de recomendaciones para el seguimiento de los pacientes con enfermedad 
+	    renal crónica. Esto ha sido posible gracias a la colaboración de compañeros médicos de Atención Primaria, profesionales de la informática y telecomunicaciones,
+	     a través de MADILON MEDICAL CARE S.L.P.
 	</string>
 	<string name="title_descripcion">DESCRIPCIÓN</string>
-	<string name="desc_descripcion">NefroConsultor es una aplicación o software para dispositivos móviles desarrollada “de profesionales médicos para profesionales 
-	    médicos” para ayudar a los médicos de atención primaria y de otras especialidades a la hora de tomar la decisión de remitir una interconsulta de un paciente 
-	    para que sea valorado por el nefrólogo. Basándose en el Documento de consenso sobre la Enfermedad Renal Crónica (27 Noviembre 2012), en la misma consulta con 
-	    el paciente y en menos de 30 segundos, incorporando únicamente 4 parámetros (edad, sexo, creatinina plasmática y albuminuria), el programa va a ser capaz de 
-	    indicar el Filtrado Glomerular estimado por las fórmulas CKD-EPI y MDRD-IDMS, el grado de enfermedad renal crónica según la clasificación pronóstica de las 
-	    guías KDIGO 2012, con el riesgo relativo correspondiente ajustado para cinco eventos (mortalidad global, mortalidad cardiovascular, fracaso renal tratado con 
-	    diálisis o trasplante, fracaso renal agudo y progresión de la enfermedad renal).  Así mismo, el programa indicará si según el Documento Consenso antes 
-	    mencionado el paciente tiene indicación de ser remitido al Especialista en Nefrología, o si debe ser seguido por su médico de AP, aportando además información 
-	    clínicamente relevante para realizar las decisiones médicas adecuadas “a pie de consulta”. Hace además una serie de recomendaciones acerca del seguimiento que 
-	    se debe realizar del paciente teniendo en cuenta su estadio de enfermedad renal. Aparece también un apartado de “Otras recomendaciones” donde se especifica 
-	    todo aquéllo que el médico de AP ha de tener en cuenta a la hora de valorar a un paciente con ERC, donde se incluyen recomendaciones acerca de hábitos 
-	    dietéticos, control de la presión arterial, tratamiento de la diabetes mellitus, control y tratamiento de la dislipemia, hiperuricemia y anemia, 
-	    recomendaciones acerca de la medicación y también de la frecuencia y seguimiento de estos pacientes.\n\n
-	    Esta aplicación ha sido desarrollada por médicos especialistas en Nefrología, que trabajan en el área de la Nefrología clínica y de Soporte a Atención Primaria 
-	    y va dirigida exclusivamente a médicos, aunque se ha planteado como una aplicación móvil gratuita, sin restricción de usuarios y que no requiere registro por 
-	    parte del usuario. En ningún momento se requieren datos de carácter personal de pacientes ni del usuario, por lo que no vulnera la Ley de Protección de Datos.\n\n
-	    - <u>Autores médicos:</u> Elena Oliva Dámaso<sup><small>1</small></sup>, Néstor Oliva Dámaso<sup><small>2</small></sup>, Juan Jesús Payán López<sup><small>3</small></sup>,
-	    Yanet Parodis López<sup><small>4</small></sup>, Nery Sablón González<sup><small>1</small></sup> y José Carlos Rodríguez Pérez<sup><small>5</small></sup>.\n
-		- <u>Desarrollador iOS:</u> Efrén Pérez Quintana<sup><small>6</small></sup>.\n
-		- <u>Desarrollador Android:</u> Nauzet Plasencia Cruz<sup><small>6</small></sup>.\n
-		- <u>Diseñadora gráfica:</u> Magdalena Dolna.\n
-		- <u>Vendedor:</u> Madilon Medical Care S.L.P.\n\n
-		<sup><small>1</small></sup> Médico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
-		<sup><small>2</small></sup> Médico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella y Hospital Quirón Marbella.\n
-		<sup><small>3</small></sup> Jefe de Sección y Médico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella.\n
-		<sup><small>4</small></sup> Médico Interno Residente de Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
-		<sup><small>5</small></sup> Jefe de Servicio y Médico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
-		<sup><small>6</small></sup> GuaguApp.\n
+	<string name="desc_descripcion">NefroConsultor es una aplicación desarrollada por médicos especialistas en Nefrología y dirigida a médicos de atención primaria 
+	    y de otras especialidades, con la intención de ayudarles a la hora de tomar la decisión de remitir una interconsulta de un paciente para que sea valorado por 
+	    el nefrólogo y de tratar a un paciente con enfermedad renal crónica. Basándose en el Documento de consenso sobre la Enfermedad Renal Crónica (27 Noviembre 2012) 
+	    y otras fuentes bibliográficas, en la misma consulta con el paciente y en menos de 30 segundos, incorporando únicamente 4 parámetros (edad, sexo, creatinina 
+	    plasmática y albuminuria), el programa va a ser capaz de indicar el Filtrado Glomerular estimado por las fórmulas CKD-EPI y MDRD-IDMS, el grado de enfermedad 
+	    renal crónica según la clasificación pronóstica de las guías KDIGO 2012, con el riesgo relativo correspondiente ajustado para cinco eventos (mortalidad global
+	    , mortalidad cardiovascular, fracaso renal tratado con diálisis o trasplante, fracaso renal agudo y progresión de la enfermedad renal).  Así mismo, el 
+	    programa indicará si según el documento de consenso antes mencionado el paciente tiene indicación de ser remitido al Especialista en Nefrología, o si debe 
+	    ser seguido por su médico de AP, aportando además información clínicamente relevante para realizar las decisiones médicas adecuadas “a pie de consulta”. 
+	    Hace además una serie de recomendaciones acerca del seguimiento que se debe realizar del paciente teniendo en cuenta su estadio de enfermedad renal, y en el 
+	    apartado de “Otras recomendaciones” se especifica todo aquello que el médico de AP ha de tener en cuenta a la hora de valorar a un paciente con ERC, donde 
+	    se incluyen recomendaciones acerca de hábitos dietéticos, control de la presión arterial, tratamiento de la diabetes mellitus, control y tratamiento de la 
+	    dislipemia, hiperuricemia y anemia, recomendaciones acerca de la medicación y también de la frecuencia y seguimiento de estos pacientes. Finalmente, el 
+	    documento de consenso en el cual se basa la aplicación, está disponible desde la app en formato pdf o ibook, entre otros, para que el usuario lo pueda 
+	    consultar en cualquier momento que lo desee.\n\n
+	    Esta aplicación ha sido desarrollada por médicos especialistas en Nefrología, que trabajan en el área de la Nefrología clínica y de Soporte a Atención 
+	    Primaria y va dirigida exclusivamente a médicos, aunque se ha planteado como una aplicación móvil gratuita, sin restricción de usuarios y que no requiere 
+	    registro por parte del usuario. En ningún momento se requieren datos de carácter personal de pacientes ni del usuario, por lo que no vulnera la Ley de 
+	    Protección de Datos. El tamaño de la app es de aproximadamente 3 megabytes y para su uso, no es necesario una conexión a Internet, salvo en el momento de 
+	    descargarse la aplicación.\n\n
+	    - &lt;u>Autores médicos:&lt;/u> Elena Oliva Dámaso&lt;sup>&lt;small>1&lt;/small>&lt;/sup>, Néstor Oliva Dámaso&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, Juan Jesús Payán López&lt;sup>&lt;small>3&lt;/small>&lt;/sup>,
+	    Yanet Parodis López&lt;sup>&lt;small>4&lt;/small>&lt;/sup>, Nery Sablón González&lt;sup>&lt;small>1&lt;/small>&lt;/sup> y José Carlos Rodríguez Pérez&lt;sup>&lt;small>5&lt;/small>&lt;/sup>.\n
+		- &lt;u>Desarrollador iOS:&lt;/u> Efrén Pérez Quintana&lt;sup>&lt;small>6&lt;/small>&lt;/sup>.\n
+		- &lt;u>Desarrollador Android:&lt;/u> Nauzet Plasencia Cruz&lt;sup>&lt;small>6&lt;/small>&lt;/sup>.\n
+		- &lt;u>Diseñadora gráfica:&lt;/u> Magdalena Dolna.\n
+		- &lt;u>Vendedor:&lt;/u> Madilon Medical Care S.L.P.\n\n
+		&lt;sup>&lt;small>1&lt;/small>&lt;/sup> Médico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
+		&lt;sup>&lt;small>2&lt;/small>&lt;/sup> Médico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella y Hospital Quirón Marbella.\n
+		&lt;sup>&lt;small>3&lt;/small>&lt;/sup> Jefe de Sección y Médico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella.\n
+		&lt;sup>&lt;small>4&lt;/small>&lt;/sup> Médico Interno Residente de Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
+		&lt;sup>&lt;small>5&lt;/small>&lt;/sup> Jefe de Servicio y Médico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n
+		&lt;sup>&lt;small>6&lt;/small>&lt;/sup> GuaguApp.\n
 		\n
 		Bibliografía:\n
-		- Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available <a href="http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf">here</a>\n
+		- Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available &lt;a href="http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf">here&lt;/a>\n
 		- KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int (Suppl) 2013;3(1);1-308.\n
 		- Galcerán JM et al. Documento de consenso sobre atención a la enfermedad renal crónica. Hipertens Riesgo Vasc. 2013;30(3):107-114.\n
 		- Gómez-Huelgas R. et al. Documento de Consenso sobre el tratamiento de la diabetes tipo 2 en el paciente con enfermedad renal crónica. Nefrologia 2014;34(1).\n
 		- Goroistidi M et al. Documento de la Sociedad Española de Nefrología sobre las guías KDIGO para la evaluación y el tratamiento de la enfermedad renal crónica. Nefrologia 2014;34(3).\n
 		- Martínez-Castelao A, et al. Documendo de consenso para la detección y manejo de la enfermedad renal crónica. Nefrologia 2014;34(2):243-62.\n
-		- Uptodate 2014.	
+		- Uptodate 2014.\n
+		\n
+		NOTA: El texto normal que aparece en la app es información basada en el documento de consenso sobre la enfermedad renal crónica (2012), mientras que el 
+		texto que aparece con otro tipo de letra procede de otros artículos de la bibliografía, o bien representa la opinión de los autores, basándose en su 
+		experiencia en la práctica médica. 
 	</string>
 	<string name="title_advertencias">ADVERTENCIAS</string>
 	<string name="desc_advertencias">Se han realizado los máximos esfuerzos para verificar la corrección, exactitud, actualidad e idoneidad de las recomendaciones, 
 	    información  y los cálculos en esta aplicación. Aunque en general reflejan pautas bien establecidas de alcance internacional vigentes en el momento de la 
 	    publicación de la aplicación, éstas pueden cambiar según avanzan los conocimientos. Además, es posible que existan erratas no detectadas en la transcripción 
-	    de la información. Por ello advertimos a los usuarios que no podemos hacernos responsables de las consecuencias que puedan derivarse de errores inadvertidos 
-	    en la aplicación. Recordamos también que en aquellas situaciones clínicas sobre las que se admiten diversas pautas o que son actualmente objeto de polémica, 
-	    el contenido de la aplicación representan exclusivamente las opiniones de los autores, sin que en absoluto se niegue validez a otras que puedan diferir de las 
-	    mismas.\n\n
-	    Por último, aconsejamos la consulta de textos especializados, publicaciones científicas periódicas y obras más extensas y detalladas cuando se requiera ampliar 
-	    la información, siendo también preciso seguir las recomendaciones y actualizaciones informativas que regularmente proporcionan las autoridades sanitarias y las 
-	    sociedades científicas. 
+	    de la información. Por ello advertimos a los usuarios que no podemos hacernos responsables de las consecuencias que puedan derivarse de errores u omisiones 
+	    inadvertidos en la aplicación. Recordamos también que en aquellas situaciones clínicas sobre las que se admiten diversas pautas o que son actualmente objeto 
+	    de polémica, el contenido de la aplicación representa exclusivamente las opiniones de los autores, sin que en absoluto se niegue validez a otras que puedan 
+	    diferir de las mismas. Esta aplicación en ningún momento pretende sustituir la relación médico paciente, debiendo el médico responsable interpretar los 
+	    resultados que ésta ofrece y aplicarlos o no al paciente según su criterio. 
+		\n\nPor último, aconsejamos la consulta de textos especializados, publicaciones científicas periódicas y obras más extensas y detalladas cuando se requiera 
+		ampliar la información, siendo también preciso seguir las recomendaciones y actualizaciones informativas que regularmente proporcionan las autoridades 
+		sanitarias y las sociedades científicas.
 	</string>
 	
 	<!-- Condiciones generales de uso -->
@@ -270,34 +290,13 @@
 	<string name="debes_aceptar">Debes aceptar las &lt;b>Condiciones generales&lt;/b> para poder hacer uso de &lt;b>NefroConsultor&lt;/b></string>
 	<string name="condiciones_acepto">Acepto</string>
 	
-	<string name="presentacion_title">PRESENTACIÓN</string>
-	<string name="presentacion_desc">
-	    &lt;b>NEFROCONSULTOR&lt;/b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario de Salud 
-	    y del Servicio Andaluz de Salud, que ofrecen el conocimiento derivado de la praxis médica obtenida del estudio y de la asistencia sanitaria con pacientes, 
-	    y que mediante la colaboración con profesionales de la informática y telecomunicaciones, y a través de MADILON MEDICAL CARE S.L.P., han elaborado 
-	    NEFROCONSULTOR para mostrar dicho contenido a los profesionales del ámbito asistencial tanto hospitalario como extrahospitalario.\n 
-		Por favor, lea atentamente las presentes condiciones legales, ya que la instalación de la aplicación conlleva la expresa y plena aceptación y 
-		sin reservas de todos los términos que se enuncian a continuación.
-	</string>
-	<string name="advertencias_title">ADVERTENCIAS</string>
-	<string name="advertencias_desc">
-	    Se han realizado los máximos esfuerzos para verificar la corrección, exactitud, actualidad e idoneidad de las recomendaciones, información y los cálculos 
-	    en esta aplicación. Aunque en general reflejan pautas bien establecidas de alcance internacional vigentes en el momento de la publicación de la aplicación, 
-	    éstas pueden cambiar según avanzan los conocimientos. Además, es posible que existan erratas no detectadas en la transcripción de la información. 
-	    Por ello advertimos a los usuarios que no podemos hacernos responsables de las consecuencias que puedan derivarse de errores inadvertidos en la aplicación. 
-	    Recordamos también que en aquellas situaciones clínicas sobre las que se admiten diversas pautas o que son actualmente objeto de polémica, el contenido 
-	    de la aplicación representan exclusivamente las opiniones de los autores, sin que en absoluto se niegue validez a otras que puedan diferir de las mismas.\n
-	    Por último, aconsejamos la consulta de textos especializados, publicaciones científicas periódicas y obras más extensas y detalladas cuando se requiera 
-	    ampliar la información, siendo también preciso seguir las recomendaciones y actualizaciones informativas que regularmente proporcionan las autoridades 
-	    sanitarias y las sociedades científicas.
-	</string>
-	<string name="condicionesgenerales_title">CONDICIONES GENERALES DE UTILIZACIÓN</string>
-	<string name="condicionesgenerales_desc">
+	<string name="title_condicionestotal">CONDICIONES GENERALES DE UTILIZACIÓN</string>
+	<string name="desc_condicionestotal">
+	    &lt;b>Rogamos lea con atención las presentes condiciones legales, ya que la instalación de la aplicación conlleva la aceptación plena y sin reservas de todos 
+	    los términos que a continuación se enuncian.&lt;/b>\n\n
 	    El presente documento tiene por objeto definir las condiciones generales del uso de la aplicación NEFROCONSULTOR propiedad de MADILON MEDICAL 
-	    CARE S.L.P. (en adelante MADILON MEDICAL CARE) provista de C.I.F B93329316, con arreglo a las siguientes
-	</string>
-	<string name="condicionestotal_title">CONDICIONES</string>
-	<string name="condicionestotal_desc">
+	    CARE S.L.P. (en adelante MADILON MEDICAL CARE) provista de C.I.F B93329316, con arreglo a las siguientes\n\n
+	    &lt;center>&lt;b>CONDICIONES&lt;/b>&lt;/center>\n\n
 	    &lt;b>PRIMERA. ACUERDO DE LICENCIA DE USO DE LA APLICACIÓN&lt;/b>\n\n
 	    MADILON MEDICAL CARE dispone de todos los derechos de propiedad intelectual y de explotación de NEFROCONSULTOR, por lo que consiente al usuario para 
 	    la utilización gratuita de NEFROCONSULTOR.\n\n
@@ -334,7 +333,7 @@
 		autorización de MADILON MEDICAL CARE.\n\n
 		El USUARIO no podrá copiar o reproducir la aplicación. Asimismo no podrá ceder, alquilar, arrendar o de otro modo distribuir parte alguna de 
 		NEFROCONSULTOR a terceros ya sea de manera permanente o temporal. Las partes se remiten a la Ley de Propiedad Intelectual vigente para todas aquellas 
-		cuestiones no reguladas en este contrato.
+		cuestiones no reguladas en este contrato.\n\n
 		&lt;b>SEXTA. PROTECCIÓN DE DATOS PERSONALES.&lt;/b>\n\n
 		Habida cuenta que los usuarios que se descarguen la versión gratuita de la aplicación no han de facilitar datos personales a MADILON MEDICAL CARE, 
 		no resultará de aplicación la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos de carácter personal (LOPD).\n\n
@@ -405,4 +404,71 @@
 		Madilon Medical Care S.L.P.\n
 		E-mail: &lt;b>madilonmedicalcare@gmail.com&lt;/b>
 	</string>
+	<string name="title_guia">GUÍA DE USUARIO</string>
+	<string name="desc_guia"></string>
+	<string name="title_abreviaturas">ABREVIATURAS Y SÍMBOLOS</string>
+	<string name="desc_abreviaturas">
+	    &lt;b>A/CR&lt;/b>\t\tAlbúmina/creatinina.\n
+		&lt;b>AINE&lt;/b>\t\tAntiinflamatorio no esteroideo.\n
+		&lt;b>AP&lt;/b>\t\t\t\tAtención Primaria.\n
+		&lt;b>ARAII&lt;/b>\tAntagonista del Receptor de Angiotensina II.\n
+		&lt;b>Cr&lt;/b>\t\t\t\t\tCreatinina.\n
+		&lt;b>DM&lt;/b>\t\t\t\tDiabetes mellitus.\n
+		&lt;b>ERC&lt;/b>\t\t\tEnfermedad Renal Crónica.\n
+		&lt;b>Fe&lt;/b>\t\t\t\t\tHierro.\n
+		&lt;b>FG&lt;/b>\t\t\t\tFiltrado Glomerular.\n
+		&lt;b>FGe&lt;/b>\t\t\tFiltrado Glomerular estimado.\n
+		&lt;b>GLP-1 RA&lt;/b>\tGlucagon Like Peptide-1 Receptor Agonist.\n
+		&lt;b>HTA&lt;/b>\t\tHipertensión Arterial.\n
+		&lt;b>Hb&lt;/b>\t\tHemoglobina.\n
+		&lt;b>HbA1c&lt;/b>\t\tHemoglobina glicosilada.\n
+		&lt;b>IDR&lt;/b>\t\tInhibidor Directo de la Renina.\n
+		&lt;b>IDPP4&lt;/b>\t\tInhibidor de la Dipeptidil Peptidasa 4.\n
+		&lt;b>IECA&lt;/b>\t\tInhibidor de la Enzima Convertidora de Angiotensina.\n
+		&lt;b>LDL&lt;/b>\t\tLow Density Lipopretein.\n
+		&lt;b>PA&lt;/b>\t\tPresión Arterial.\n
+		&lt;b>VHB&lt;/b>\t\tVirus de la Hepatitis B.\n
+	</string>
+	<string name="title_comite">COMITÉ DE EDICIÓN Y COLABORADORES</string>
+	<string name="desc_comite">
+	    &lt;u>Autores médicos:&lt;/u>\n\n
+	    \t&lt;b>Elena Oliva Dámaso&lt;/b>\n
+	    \tMédico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n\n
+	    \t&lt;b>Néstor Oliva Dámaso&lt;/b>\n
+	    \tMédico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella y Hospital Quirón Marbella.\n\n
+	    \t&lt;b>Juan Jesús Payán López&lt;/b>\n
+	    \tJefe de Sección y Médico Adjunto Especialista en Nefrología del Hospital Costa del Sol Marbella.\n\n
+	    \t&lt;b>Yanet Parodis López&lt;/b>\n
+	    \tMédico Interno Residente de Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n\n
+	    \t&lt;b>Nery Sablón González&lt;/b>\n
+	    \tMédico Adjunto Especialista en Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n\n
+	    \t&lt;b>Juan Manuel Fernández&lt;/b>\n
+	    \tMédico Interno Residente de Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n\n
+	    \t&lt;b>José Carlos Rodríguez Pérez&lt;/b>\n
+	    \tJefe de Servicio de Nefrología del Hospital Universitario de Gran Canaria Doctor Negrín.\n\n
+	    &lt;u>Desarrollador Android:&lt;/u>\n\n
+	    \t&lt;b>Nauzet Plasencia Cruz&lt;/b>\n
+	    \tIngeniero de telecomunicación.\n\n
+	    &lt;u>Desarrollador iOS:&lt;/u>\n\n
+	    \t&lt;b>Efrén Pérez Quintana&lt;/b>\n
+	    \tIngeniero de telecomunicación.\n\n
+	    &lt;u>Diseñadora gráfica:&lt;/u>\n\n
+	    \t&lt;b>Magdalena Dolna&lt;/b>\n
+	    \tDescripción Magda.\n\n
+	    &lt;u>Propietario y Vendedor:&lt;/u>\n\n
+	    \t&lt;b>Madilon Medical Care S.L.P.&lt;/b>\n
+	</string>
+	<string name="title_bibliografia">BIBLIOGRAFÍA Y REFERENCIAS</string>
+	<string name="desc_bibliografia">
+	    - Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available <a href="http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf">here</a>\n
+		- KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int (Suppl) 2013;3(1);1-308.\n
+		- Galcerán JM et al. Documento de consenso sobre atención a la enfermedad renal crónica. Hipertens Riesgo Vasc. 2013;30(3):107-114.\n
+		- Gómez-Huelgas R. et al. Documento de Consenso sobre el tratamiento de la diabetes tipo 2 en el paciente con enfermedad renal crónica. Nefrologia 2014;34(1).\n
+		- Goroistidi M et al. Documento de la Sociedad Española de Nefrología sobre las guías KDIGO para la evaluación y el tratamiento de la enfermedad renal crónica. Nefrologia 2014;34(3).\n
+		- Martínez-Castelao A, et al. Documendo de consenso para la detección y manejo de la enfermedad renal crónica. Nefrologia 2014;34(2):243-62.\n
+		- Uptodate 2014.\n
+	</string>
+	<string name="title_contacto">CONTACTO</string>
+	<string name="title_share">COMPARTE LA APP</string>
+	<string name="title_valorar">VALORAR LA APP</string>
 </resources>

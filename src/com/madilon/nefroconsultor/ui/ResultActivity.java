@@ -41,13 +41,13 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		razaNegra = getIntent().getBooleanExtra(Globals.razaIntent, false);
 		
 		Boolean otros = false;
-		String otrosExplicacion = "Por ";
+		String otrosExplicacion = getString(R.string.result_otros_by) + " ";
 		if (getIntent().hasExtra(Globals.otrosIntent)){
 			otrosMotivos = getIntent().getParcelableArrayListExtra(Globals.otrosIntent);
 			for(OtroMotivo otroMotivo : otrosMotivos) {
 				if (otroMotivo.isChecked()) {
 					otros = true;
-					if (otroMotivo.getTitulo().equals("Otros")) {
+					if (otroMotivo.getTitulo().equals(getString(R.string.tituloMotivoOtros))) {
 						otrosExplicacion += otroMotivo.getTitulo().toLowerCase() +" motivos y ";
 					} else {
 						otrosExplicacion += otroMotivo.getTitulo().toLowerCase() +" y ";
@@ -99,17 +99,20 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		if ((fgEstadio.equals("G1") || fgEstadio.equals("G2")) && albuminuriaEstadio.equals("A1")) {
 			result.setText(getString(R.string.resultAst) + " " + fgEstadio +" "+albuminuriaEstadio);
 			recomendacionesAst.setText(R.string.text_recomendaciones_asterisco);
+			recomendacionesAst.setVisibility(View.VISIBLE);
 		} else {
 			result.setText(getString(R.string.result) + " " + fgEstadio + " " +albuminuriaEstadio);
 		}
 		
-		if (albuminuriaEstadio.equals("A2") && (!fgEstadio.equals("G4") && !fgEstadio.equals("G5"))) {
-			TextView textCasoA2 = (TextView) findViewById(R.id.text_recomendaciones_casoA2);
-			textCasoA2.setTypeface(Typefaces.SignikaRegular(this));
-			textCasoA2.setVisibility(View.VISIBLE);
-			TextView textCasoA2Elena = (TextView) findViewById(R.id.text_recomendaciones_casoA2_elena);
-			textCasoA2Elena.setTypeface(Typefaces.SignikaLight(this));
-			textCasoA2Elena.setVisibility(View.VISIBLE);
+		if (!otros) {	
+			if (albuminuriaEstadio.equals("A2") && (fgEstadio.equals("G1") || fgEstadio.equals("G2"))) {
+				TextView textCasoA2 = (TextView) findViewById(R.id.text_recomendaciones_casoA2);
+				textCasoA2.setTypeface(Typefaces.SignikaRegular(this));
+				textCasoA2.setVisibility(View.VISIBLE);
+				TextView textCasoA2Elena = (TextView) findViewById(R.id.text_recomendaciones_casoA2_elena);
+				textCasoA2Elena.setTypeface(Typefaces.SignikaLight(this));
+				textCasoA2Elena.setVisibility(View.VISIBLE);
+			}
 		}
 		
 		cambiarFondoResult(result, fgEstadio, albuminuriaEstadio, albuminuria);
@@ -122,18 +125,34 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			recomendacionesTitle.setText(R.string.remitir);
 			recomendacionesSubtitle.setText(otrosExplicacion);
 		} else if (edad > 80 && (mdrdIms >20 && mdrdIms <30)) {
-			recomendacionesTitle.setText(R.string.noRemitir);
+			recomendacionesTitle.setText(R.string.remitirVsNoRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso1Subtitle);
 			recomendacionesDesc.setText(R.string.noRemitirCaso1Desc);
-		} else if (edad <=80 && (mdrdIms >30 && mdrdIms <45)) {
+		} else if (edad > 70 && (mdrdIms > 30 && mdrdIms < 45)) {
 			recomendacionesTitle.setText(R.string.noRemitir);
+			TextView textCasoEspecial = (TextView) findViewById(R.id.text_noRemitirCaso3Subtitle_elena);
+			textCasoEspecial.setTypeface(Typefaces.SignikaLight(this));
+			textCasoEspecial.setVisibility(View.VISIBLE);
+			if (albuminuria >=30 && albuminuria < 299) {
+				recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
+			}
+			if (edad > 80) {
+				recomendacionesSubtitle.setText(recomendacionesSubtitle.getText().toString() + getText(R.string.noRemitirCaso3Subtitle_80));
+			}
+			
+		} else if (edad <= 70 && (mdrdIms > 30 && mdrdIms < 45)) {
+			if (albuminuriaEstadio == "A1" || albuminuriaEstadio == "A2") {
+				recomendacionesTitle.setText(R.string.remitirVsNoRemitir);
+			} else {
+				recomendacionesTitle.setText(R.string.noRemitir);
+			}
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso2Subtitle);
 			recomendacionesDesc.setTypeface(Typefaces.SignikaLight(this));
 			recomendacionesDesc.setText(R.string.noRemitirCaso2Desc);
 		} else if (albuminuria >=30 && albuminuria < 299) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
-		} else if (albuminuria < 30) {
+		} else if (albuminuria < 30 && ((fgEstadio.equals("G1") || fgEstadio.equals("G2")) && albuminuriaEstadio.equals("A1"))) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso4Subtitle);
 		}

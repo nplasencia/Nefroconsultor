@@ -65,10 +65,9 @@ public class CondicionesActivity extends ActionBarNefroConsultor {
 		});
 		
 		List<InfoApp> info = new ArrayList<InfoApp>();
-		info.add(new InfoApp(getString(R.string.presentacion_title), getString(R.string.presentacion_desc)));
-		info.add(new InfoApp(getString(R.string.advertencias_title), getString(R.string.advertencias_desc)));
-		info.add(new InfoApp(getString(R.string.condicionesgenerales_title), getString(R.string.condicionesgenerales_desc)));
-		info.add(new InfoApp(getString(R.string.condicionestotal_title), getString(R.string.condicionestotal_desc)));
+		info.add(new InfoApp(getString(R.string.title_presentacion), getString(R.string.desc_presentacion)));
+		info.add(new InfoApp(getString(R.string.title_advertencias), getString(R.string.desc_advertencias)));
+		info.add(new InfoApp(getString(R.string.title_condicionestotal), getString(R.string.desc_condicionestotal)));
 		
 		ListAdapter adapter = new InfoAppItemAdapter(this, info);
 		

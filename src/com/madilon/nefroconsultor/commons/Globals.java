@@ -16,4 +16,6 @@ public class Globals {
 	 * Constantes de las preferences
 	 */
 	public static String condicionesPreferences = "CONDICIONES";
+	
+	public static String emailContacto = "madilonmedicalcare@gmail.com";
 }

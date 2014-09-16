@@ -1,7 +1,6 @@
 package com.madilon.nefroconsultor.classes;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -39,10 +38,7 @@ public class ActionBarNefroConsultor extends ActionBarActivity {
 			onBackPressed();
 			return true;
 		}  else if (id == R.id.action_email) {
-			Intent emailIntent = new Intent(Intent.ACTION_VIEW);
-			Uri data = Uri.parse("mailto:madilonmedicalcare@gmail.com?subject=[NefroConsultor] Contacto con Madilon Medical Care");
-			emailIntent.setData(data);
-			startActivity(Intent.createChooser(emailIntent, "Elige tu app de correo preferida"));
+			startActivity(NefroConsultorHelper.getEmailIntent(this));
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

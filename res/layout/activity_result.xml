@@ -165,6 +165,16 @@
 	            android:textSize="@dimen/btnText"/>
 	        
 	        <TextView 
+	            android:id="@+id/text_noRemitirCaso3Subtitle_elena"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:textColor="@color/titleTextColor"
+	            android:textSize="@dimen/otrosMotivosTitle"
+	            android:text="@string/noRemitirCaso3Subtitle_elena"
+	            android:visibility="gone"/>
+	        
+	        <TextView 
 	            android:id="@+id/text_recomendaciones_subtitle"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"

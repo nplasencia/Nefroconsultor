@@ -45,12 +45,29 @@
         
         <activity
             android:name="com.madilon.nefroconsultor.ui.RecomendacionesActivity"
-            android:label="@string/title_recomendaciones_otros"
-            android:windowSoftInputMode="adjustPan">
+            android:label="@string/title_recomendaciones_otros">
             
              <meta-data
             	android:name="android.support.PARENT_ACTIVITY"
             	android:value=".ui.ResultActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.madilon.nefroconsultor.ui.ExplainResultActivity"
+            android:label="@string/title_explainResult">
+            
+             <meta-data
+            	android:name="android.support.PARENT_ACTIVITY"
+            	android:value=".ui.ResultActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.madilon.nefroconsultor.ui.TableActivity"
+            android:label="@string/title_explainResult"
+            android:screenOrientation="landscape">            
+             <meta-data
+            	android:name="android.support.PARENT_ACTIVITY"
+            	android:value=".ui.ExplainResultActivity" />
         </activity>
         
         <activity

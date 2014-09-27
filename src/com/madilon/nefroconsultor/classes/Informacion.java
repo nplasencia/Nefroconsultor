@@ -8,12 +8,14 @@ public class Informacion {
 	private String descripcion;
 	private int posicion;
 	private Intent intent;
+	private Integer view;
 	
-	public Informacion(String titulo, String descripcion, int posicion, Intent intent) {
+	public Informacion(String titulo, String descripcion, int posicion, Intent intent, Integer view) {
 		this.titulo = titulo;
 		this.descripcion = descripcion;
 		this.posicion = posicion;
 		this.setIntent(intent);
+		this.view = view;
 	}
 	
 	public Informacion() {
@@ -46,6 +48,14 @@ public class Informacion {
 
 	public void setIntent(Intent intent) {
 		this.intent = intent;
+	}
+
+	public Integer getView() {
+		return view;
+	}
+
+	public void setView(Integer view) {
+		this.view = view;
 	}
 	
 }

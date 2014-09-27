@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nefroConsultorTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/symbolsView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial1"
+        android:text="@string/desc_guia1"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial2"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia2"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial3"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia3"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial4"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia4"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial5"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia5"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial6"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia6"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableTop="@drawable/img_tutorial7"
+        android:drawableBottom="@drawable/img_tutorial8"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia7"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Regular.ttf"
+        android:drawableBottom="@drawable/img_tutorial9"
+        android:drawablePadding="10dp"
+        android:text="@string/desc_guia8"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:text="@string/symbolsTitle"/>
+        
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/btn_masculino_on"
+        android:text="@string/masculino"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/btn_femenino_on"
+        android:text="@string/femenino"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/btn_next_on"
+        android:text="@string/nextScreen"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/btn_mostrarmas_on"
+        android:text="@string/masSymbol"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/btn_mostrarmenos_on"
+        android:text="@string/ocultarSymbol"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/ic_documentacion_off"
+        android:text="@string/docConsenso"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/ic_info_off"
+        android:text="@string/info"/>
+    
+    <com.madilon.nefroconsultor.customization.NefroConsultorTextView
+        android:layout_width ="fill_parent"
+        android:layout_height ="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize = "@dimen/otrosMotivosDesc"
+        android:textColor="@color/titleTextColor"
+        nefroConsultorTextView:fontName = "Signika-Bold.ttf"
+        android:drawableTop="@drawable/ic_mail_off"
+        android:text="@string/contact"/>
+
+</LinearLayout>

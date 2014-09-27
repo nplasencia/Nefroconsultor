@@ -23,6 +23,7 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:paddingTop="5dp"
         android:textColor="@color/titleTextColor"
-        android:textSize="@dimen/otrosMotivosDesc" />
+        android:textSize="@dimen/otrosMotivosDesc"
+        android:autoLink="all"/>
 
 </LinearLayout>

@@ -16,6 +16,9 @@ import com.madilon.nefroconsultor.R;
 import com.madilon.nefroconsultor.classes.ActionBarNefroConsultor;
 import com.madilon.nefroconsultor.classes.OtroMotivo;
 import com.madilon.nefroconsultor.commons.Globals;
+import com.madilon.nefroconsultor.enums.AlbuminuriaEnum;
+import com.madilon.nefroconsultor.enums.EstadioEnum;
+import com.madilon.nefroconsultor.enums.FgeEnum;
 import com.madilon.nefroconsultor.enums.SexoEnum;
 import com.madilon.nefroconsultor.helpers.SpannableHelper;
 import com.madilon.nefroconsultor.helpers.Typefaces;
@@ -27,6 +30,11 @@ public class ResultActivity extends ActionBarNefroConsultor {
 	Double creatinina;
 	Double albuminuria;
 	Boolean razaNegra;
+	Double cdkEpi;
+	Double mdrdIms;
+	AlbuminuriaEnum albuminuriaEstadio;
+	FgeEnum fgEstadio;
+	
 	ArrayList<OtroMotivo> otrosMotivos;
 
 	@Override
@@ -57,8 +65,8 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			otrosExplicacion = otrosExplicacion.substring(0, otrosExplicacion.length()-3)+".";
 		}
 		
-		Double cdkEpi = obtenerCKDEPI(edad, sexo, creatinina, albuminuria, razaNegra);
-		Double mdrdIms = obtenerMDRDIDMS(edad, sexo, creatinina, albuminuria, razaNegra);
+		cdkEpi = obtenerCKDEPI(edad, sexo, creatinina, albuminuria, razaNegra);
+		mdrdIms = obtenerMDRDIDMS(edad, sexo, creatinina, albuminuria, razaNegra);
 		
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
@@ -93,19 +101,19 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		TextView recomendacionesDesc = (TextView) findViewById(R.id.text_recomendaciones_descripcion);
 		recomendacionesDesc.setTypeface(Typefaces.SignikaRegular(this));
 		
-		String albuminuriaEstadio = albuminuriaEstadios(albuminuria);
-		String fgEstadio = fgEstadios(mdrdIms);
+		albuminuriaEstadio = AlbuminuriaEnum.albuminuriaEstadios(albuminuria);
+		fgEstadio = FgeEnum.fgEstadios(mdrdIms);
 		
-		if ((fgEstadio.equals("G1") || fgEstadio.equals("G2")) && albuminuriaEstadio.equals("A1")) {
-			result.setText(getString(R.string.resultAst) + " " + fgEstadio +" "+albuminuriaEstadio);
+		if ((fgEstadio.getId() < FgeEnum.G3a.getId()) && albuminuriaEstadio.getId() < AlbuminuriaEnum.A2.getId()) {
+			result.setText(getString(R.string.resultAst) + " " + fgEstadio.getDescription() +" "+albuminuriaEstadio.getDescription());
 			recomendacionesAst.setText(R.string.text_recomendaciones_asterisco);
 			recomendacionesAst.setVisibility(View.VISIBLE);
 		} else {
-			result.setText(getString(R.string.result) + " " + fgEstadio + " " +albuminuriaEstadio);
+			result.setText(getString(R.string.result) + " " + fgEstadio.getDescription() + " " +albuminuriaEstadio.getDescription());
 		}
 		
 		if (!otros) {	
-			if (albuminuriaEstadio.equals("A2") && (fgEstadio.equals("G1") || fgEstadio.equals("G2"))) {
+			if (albuminuriaEstadio.equals(AlbuminuriaEnum.A2) && (fgEstadio.getId() < FgeEnum.G3a.getId())) {
 				TextView textCasoA2 = (TextView) findViewById(R.id.text_recomendaciones_casoA2);
 				textCasoA2.setTypeface(Typefaces.SignikaRegular(this));
 				textCasoA2.setVisibility(View.VISIBLE);
@@ -115,7 +123,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			}
 		}
 		
-		cambiarFondoResult(result, fgEstadio, albuminuriaEstadio, albuminuria);
+		result.setBackgroundResource(EstadioEnum.getFromAlbuminuriaFgEnum(albuminuriaEstadio, fgEstadio).getEstadio().getBackground());
 		
 		if ((edad <= 80 && mdrdIms <= 30) || (edad > 80 && mdrdIms <=20 )) {
 			recomendacionesTitle.setText(R.string.remitirCaso1);
@@ -141,7 +149,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			}
 			
 		} else if (edad <= 70 && (mdrdIms > 30 && mdrdIms < 45)) {
-			if (albuminuriaEstadio == "A1" || albuminuriaEstadio == "A2") {
+			if (albuminuriaEstadio.getId() < AlbuminuriaEnum.A3a.getId()) {
 				recomendacionesTitle.setText(R.string.remitirVsNoRemitir);
 			} else {
 				recomendacionesTitle.setText(R.string.noRemitir);
@@ -152,7 +160,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		} else if (albuminuria >=30 && albuminuria < 299) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
-		} else if (albuminuria < 30 && ((fgEstadio.equals("G1") || fgEstadio.equals("G2")) && albuminuriaEstadio.equals("A1"))) {
+		} else if (albuminuria < 30 && (fgEstadio.getId() < FgeEnum.G3a.getId() && albuminuriaEstadio.getId() < AlbuminuriaEnum.A2.getId())) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso4Subtitle);
 		}
@@ -164,6 +172,25 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(ResultActivity.this, RecomendacionesActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		result.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ResultActivity.this, ExplainResultActivity.class);
+				intent.putExtra(Globals.sexoIntent, sexo);
+				intent.putExtra(Globals.edadIntent, edad.toString());
+				intent.putExtra(Globals.albuIntent, albuminuria.toString());
+				intent.putExtra(Globals.creaIntent, creatinina.toString());
+				intent.putExtra(Globals.razaIntent, razaNegra);
+				intent.putExtra(Globals.cdkEpiIntent, cdkEpi.toString());
+				intent.putExtra(Globals.mdrdIdmsIntent, mdrdIms.toString());
+				intent.putExtra(Globals.albuEstadioIntent, albuminuriaEstadio);
+				intent.putExtra(Globals.fgEstadioIntent, fgEstadio);
+				intent.putExtra(Globals.resultadoTextIntent, ((TextView) findViewById(R.id.text_recomendaciones_title)).getText().toString());
 				startActivity(intent);
 			}
 		});
@@ -218,44 +245,6 @@ public class ResultActivity extends ActionBarNefroConsultor {
 		Log.d("MDRD-IDMS", "El resultado es " + resultado);
 		
 		return resultado;
-	}
-	
-	public static String albuminuriaEstadios(Double albuminuria) {
-		if (albuminuria < 30) {
-			return "A1";
-		} else if (albuminuria >=30 && albuminuria < 300) {
-			return "A2";
-		}
-		return "A3";
-	}
-	
-	public static String fgEstadios(double resultadoMdrd) {
-		if (resultadoMdrd >=90 ) {
-			return "G1"; 
-		} else if (resultadoMdrd < 90 && resultadoMdrd >= 60) {
-			return "G2";
-		} else if (resultadoMdrd < 60 && resultadoMdrd >= 45) {
-			return "G3a";
-		} else if (resultadoMdrd < 45 && resultadoMdrd >= 30) {
-			return "G3b";
-		} else if (resultadoMdrd < 30 && resultadoMdrd >= 15) {
-			return "G4";
-		}
-		return "G5";
-	}
-	
-	private static void cambiarFondoResult (TextView caja, String estadioFg, String estadioAlbu, Double albuminuria) {
-		if (estadioFg.equals("G5") || albuminuria >= 2000) {
-			caja.setBackgroundResource(R.drawable.shape_resultado_muymalo);
-		} else if (estadioFg.equals("G4") || (estadioFg.equals("G3b") && (estadioAlbu.equals("A2")) || estadioAlbu.equals("A3"))) {
-			caja.setBackgroundResource(R.drawable.shape_resultado_malo);
-		} else if (albuminuria >=300 || (estadioFg.equals("G3a") && estadioAlbu.equals("A2")) || (estadioFg.equals("G3b"))) {
-			caja.setBackgroundResource(R.drawable.shape_resultado_regular);
-		} else if (estadioAlbu.equals("A2") || (estadioFg.equals("G3a") && estadioAlbu.equals("A1"))) {
-			caja.setBackgroundResource(R.drawable.shape_resultado_bueno);
-		} else {
-			caja.setBackgroundResource(R.drawable.shape_resultado_muybueno);
-		}
 	}
 	
 	@Override

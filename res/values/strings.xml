@@ -3,6 +3,7 @@
 
     <string name="app_name">NefroConsultor</string>
     <string name="result_otros_by">Por</string>
+    <string name="doubleFormat">&#37;1$.2f</string>
     <!-- Action bar strings -->
     <string name="action_documentacion">Documentación</string>
     <string name="action_info">Acerca de</string>
@@ -67,8 +68,8 @@
 	<string name="recomendaciones">RECOMENDACIONES</string>
 	<string name="remitirVsNoRemitir">VALORAR REMITIR A NEFROLOGÍA VS. SEGUIMIENTO POR MÉDICO DE AP</string>
 	<string name="remitir">REMITIR AL ESPECIALISTA EN NEFROLOGÍA</string>
-	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG &lt; 30 ml/min/1,73m<sup><small>2</small></sup> en 2 determinaciones durante al menos 3 meses.</string>
-	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado albuminuria > 300 mg/g en al menos 2 ocasiones durante al menos 3 meses.</string>
+	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG &lt; 30 ml/min/1,73m<sup><small>2</small></sup> en 2 determinaciones durante al menos 3 meses</string>
+	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado albuminuria > 300 mg/g en al menos 2 ocasiones durante al menos 3 meses</string>
 	<string name="noRemitir">SEGUIMIENTO POR MÉDICO DE AP</string>
 	<string name="noRemitirCaso1Subtitle">En pacientes mayores de 80 años con FGe 20&#8211;30 ml/min/1.73m<sup><small>2</small></sup> se recomienda remitir a nefrología si existe progresión renal, albuminuria > 300 mg/g, existen signos de alarma o existe planteamiento de tratamiento sustitutivo renal.</string>
 	<string name="noRemitirCaso1Desc">Dado que la progresión de la enfermedad renal crónica en población anciana, es muy poco frecuente se puede aceptar que los 
@@ -213,7 +214,7 @@
 	
 	<!-- Acerca de -->
 	<string name="title_activity_about">INFORMACIÓN</string>
-	<string name="title_presentacion">PRESENTACIÓN</string>
+	<string name="title_presentacion">Presentación</string>
 	<string name="desc_presentacion">&lt;b>NEFROCONSULTOR&lt;/b> es fruto del trabajo conjunto de un equipo de profesionales médicos especialistas en Nefrología del Servicio Canario 
 	    de Salud y del Servicio Andaluz de Salud, que ofrecen el conocimiento derivado de la praxis médica obtenida del estudio y de la asistencia sanitaria con 
 	    pacientes, y que mediante la colaboración con profesionales de las telecomunicaciones, y a través de MADILON MEDICAL CARE S.L.P., han elaborado NEFROCONSULTOR 
@@ -223,14 +224,14 @@
 	    renal crónica. Esto ha sido posible gracias a la colaboración de compañeros médicos de Atención Primaria, profesionales de la informática y telecomunicaciones,
 	     a través de MADILON MEDICAL CARE S.L.P.
 	</string>
-	<string name="title_descripcion">DESCRIPCIÓN</string>
+	<string name="title_descripcion">Descripción</string>
 	<string name="desc_descripcion">NefroConsultor es una aplicación desarrollada por médicos especialistas en Nefrología y dirigida a médicos de atención primaria 
 	    y de otras especialidades, con la intención de ayudarles a la hora de tomar la decisión de remitir una interconsulta de un paciente para que sea valorado por 
 	    el nefrólogo y de tratar a un paciente con enfermedad renal crónica. Basándose en el Documento de consenso sobre la Enfermedad Renal Crónica (27 Noviembre 2012) 
 	    y otras fuentes bibliográficas, en la misma consulta con el paciente y en menos de 30 segundos, incorporando únicamente 4 parámetros (edad, sexo, creatinina 
 	    plasmática y albuminuria), el programa va a ser capaz de indicar el Filtrado Glomerular estimado por las fórmulas CKD-EPI y MDRD-IDMS, el grado de enfermedad 
 	    renal crónica según la clasificación pronóstica de las guías KDIGO 2012, con el riesgo relativo correspondiente ajustado para cinco eventos (mortalidad global
-	    , mortalidad cardiovascular, fracaso renal tratado con diálisis o trasplante, fracaso renal agudo y progresión de la enfermedad renal).  Así mismo, el 
+	    , mortalidad cardiovascular, fracaso renal tratado con diálisis o trasplante, fracaso renal agudo y progresión de la enfermedad renal). Así mismo, el 
 	    programa indicará si según el documento de consenso antes mencionado el paciente tiene indicación de ser remitido al Especialista en Nefrología, o si debe 
 	    ser seguido por su médico de AP, aportando además información clínicamente relevante para realizar las decisiones médicas adecuadas “a pie de consulta”. 
 	    Hace además una serie de recomendaciones acerca del seguimiento que se debe realizar del paciente teniendo en cuenta su estadio de enfermedad renal, y en el 
@@ -258,7 +259,7 @@
 		&lt;sup>&lt;small>6&lt;/small>&lt;/sup> GuaguApp.\n
 		\n
 		Bibliografía:\n
-		- Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available &lt;a href="http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf">here&lt;/a>\n
+		- Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available at http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf\n
 		- KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int (Suppl) 2013;3(1);1-308.\n
 		- Galcerán JM et al. Documento de consenso sobre atención a la enfermedad renal crónica. Hipertens Riesgo Vasc. 2013;30(3):107-114.\n
 		- Gómez-Huelgas R. et al. Documento de Consenso sobre el tratamiento de la diabetes tipo 2 en el paciente con enfermedad renal crónica. Nefrologia 2014;34(1).\n
@@ -270,7 +271,7 @@
 		texto que aparece con otro tipo de letra procede de otros artículos de la bibliografía, o bien representa la opinión de los autores, basándose en su 
 		experiencia en la práctica médica. 
 	</string>
-	<string name="title_advertencias">ADVERTENCIAS</string>
+	<string name="title_advertencias">Advertencias</string>
 	<string name="desc_advertencias">Se han realizado los máximos esfuerzos para verificar la corrección, exactitud, actualidad e idoneidad de las recomendaciones, 
 	    información  y los cálculos en esta aplicación. Aunque en general reflejan pautas bien establecidas de alcance internacional vigentes en el momento de la 
 	    publicación de la aplicación, éstas pueden cambiar según avanzan los conocimientos. Además, es posible que existan erratas no detectadas en la transcripción 
@@ -290,7 +291,7 @@
 	<string name="debes_aceptar">Debes aceptar las &lt;b>Condiciones generales&lt;/b> para poder hacer uso de &lt;b>NefroConsultor&lt;/b></string>
 	<string name="condiciones_acepto">Acepto</string>
 	
-	<string name="title_condicionestotal">CONDICIONES GENERALES DE UTILIZACIÓN</string>
+	<string name="title_condicionestotal">Condiciones generales de utilización</string>
 	<string name="desc_condicionestotal">
 	    &lt;b>Rogamos lea con atención las presentes condiciones legales, ya que la instalación de la aplicación conlleva la aceptación plena y sin reservas de todos 
 	    los términos que a continuación se enuncian.&lt;/b>\n\n
@@ -313,7 +314,7 @@
 	    plataforma App Store (y Google Play) que es de donde se descarga la aplicación.\n\n
 		&lt;b>TERCERA. CONDICIONES DE USO, COPIAS Y ACTUALIZACIONES O NUEVAS VERSIONES.&lt;/b>\n\n
 		NEFROCONSULTOR deberá utilizarse en el dispositivo donde se haya instalado, destinándolo el USUARIO a la satisfacción de sus necesidades profesionales 
-		de acuerdo con lo  dispuesto en la Ley de Propiedad Intelectual.\n\n
+		de acuerdo con lo dispuesto en la Ley de Propiedad Intelectual.\n\n
 		El USUARIO no podrá realizar modificación alguna sobre NEFROCONSULTOR.\n\n
 		El USUARIO es responsable de mantener los requisitos de sistema de su dispositivo para utilizar NEFROCONSULTOR. Cualquier alteración del dispositivo 
 		con respecto a su forma original hecha por el USUARIO u otras personas que causen el mal funcionamiento de NEFROCONSULTOR es su responsabilidad. Si el 
@@ -404,9 +405,40 @@
 		Madilon Medical Care S.L.P.\n
 		E-mail: &lt;b>madilonmedicalcare@gmail.com&lt;/b>
 	</string>
-	<string name="title_guia">GUÍA DE USUARIO</string>
-	<string name="desc_guia"></string>
-	<string name="title_abreviaturas">ABREVIATURAS Y SÍMBOLOS</string>
+	<string name="title_guia">Guía de usuario</string>
+	<string name="desc_guia1">NefroConsultor es una aplicación para smartphones que permite conocer la situación desde el punto de vista renal de un paciente, 
+	    si tiene enfermedad renal crónica o no, el grado de ésta, e indica si el paciente deber ser seguido por su médico de atención primaria o remitido al 
+	    especialista en Nefrología, además de hacer una serie de recomendaciones para el seguimiento de los pacientes con enfermedad renal crónica.\n\n
+		Al abrir la aplicación aparece la pantalla principal donde habría que incluir los datos básicos del paciente que queremos valorar. Los datos son aislados 
+		y no se vinculan en ningún momento con ningún dato de carácter personal que permita identificar al paciente. Los parámetros edad, Sexo (masculino y femenino), 
+		creatinina plasmática y albuminuria son obligatorios, pudiendo en la albuminuria mantener el valor 0 predeterminado. Si el paciente es de raza negra habría 
+		que marcar esta opción.                                                     
+	</string>
+	<string name="desc_guia2">Una vez completados estos datos, el usuario puede ir directamente a “calcular” y obtener un resultado, o acceder a a pantalla de 
+	    “otros motivos”, que indicaría otros motivos por los que el paciente debería ser remitido a Nefrología.</string>
+	<string name="desc_guia3">Una vez en “otros motivos”, cada una de las opciones se puede desplegar, apareciendo una explicación más amplia de la misma. 
+	    Si se considera que es adecuada para el paciente se puede marcar. No es obligatorio marcar ninguna de ellas, y se puede volver a la pantalla anterior en 
+	    el botón “volver”. Así mismo, también es posible marcar varias opciones al mismo tiempo, si el paciente cumple varias condiciones.</string>
+    <string name="desc_guia4">Desde la pantalla de otros motivos, o desde la pantalla inicial, se puede acceder a calcular, y el programa mostrará la página de 
+        resultados, indicando el filtrado glomerular estimado por la fórmulas MDRD-IDMS y CKD-EPI, el grado de enfermedad renal crónica y el estadio que le 
+        correspondería al paciente según la clasificación pronóstica de las guías KDIGO. Indicará si según el documento de consenso antes mencionado el paciente 
+        tiene indicación de ser remitido al especialista en Nefrología, o si debe ser seguido por su médico de AP, aportando además información clínicamente 
+        relevante para su médico.</string>
+    <string name="desc_guia5">Al pulsar sobre el recuadro del resultado (marcado en color) aparecerá una vista con un resumen del paciente y una explicación 
+        más extensa del resultado. En esta pantalla aparece también la tabla de la clasificación de la enfermedad renal crónica de la KDIGO 2012, y aparecerá 
+        señalado el recuadro correspondiente al estadio de ERC del paciente en cuestión.</string>
+    <string name="desc_guia6">La app hace además una serie de recomendaciones acerca del seguimiento que se debe realizar al paciente teniendo en cuenta su estadio 
+        de enfermedad renal. Desde la pantalla de resultados, en el apartado de “Otras recomendaciones” se especifica todo aquello que el médico de AP ha de tener 
+        en cuenta a la hora de valorar a un paciente con ERC, donde se incluyen recomendaciones acerca de hábitos dietéticos, control de la presión arterial, 
+        tratamiento de la diabetes mellitus, control y tratamiento de la dislipemia, hiperuricemia y anemia, recomendaciones acerca de la medicación y también 
+        de la frecuencia y seguimiento de estos pacientes.</string>
+    <string name="desc_guia7">El documento de consenso en el cual se basa la aplicación, está disponible desde la app en formato pdf para que el usuario lo pueda 
+        consultar en cualquier momento que lo desee.</string>
+	<string name="desc_guia8">En el botón de información, aparecerá una pantalla, con varios apartados desplegables, que incluyen la presentación de la app, 
+	    descripción, advertencias y condiciones generales. Aparece también la guía de usuario, las abreviaturas y símbolos utilizados, el comité de edición y 
+	    colaboradores, las referencias bibliográficas y la posibilidad de valorar la aplicación en las distintas plataformas o contactar con los propietarios de 
+	    la app, así como compartirla con otros usuarios o contactos.</string>
+	<string name="title_abreviaturas">Abreviaturas y símbolos</string>
 	<string name="desc_abreviaturas">
 	    &lt;b>A/CR&lt;/b>\t\tAlbúmina/creatinina.\n
 		&lt;b>AINE&lt;/b>\t\tAntiinflamatorio no esteroideo.\n
@@ -419,17 +451,17 @@
 		&lt;b>FG&lt;/b>\t\t\t\tFiltrado Glomerular.\n
 		&lt;b>FGe&lt;/b>\t\t\tFiltrado Glomerular estimado.\n
 		&lt;b>GLP-1 RA&lt;/b>\tGlucagon Like Peptide-1 Receptor Agonist.\n
-		&lt;b>HTA&lt;/b>\t\tHipertensión Arterial.\n
-		&lt;b>Hb&lt;/b>\t\tHemoglobina.\n
-		&lt;b>HbA1c&lt;/b>\t\tHemoglobina glicosilada.\n
-		&lt;b>IDR&lt;/b>\t\tInhibidor Directo de la Renina.\n
-		&lt;b>IDPP4&lt;/b>\t\tInhibidor de la Dipeptidil Peptidasa 4.\n
+		&lt;b>HTA&lt;/b>\t\t\tHipertensión Arterial.\n
+		&lt;b>Hb&lt;/b>\t\t\t\tHemoglobina.\n
+		&lt;b>HbA1c&lt;/b>\tHemoglobina glicosilada.\n
+		&lt;b>IDR&lt;/b>\t\t\tInhibidor Directo de la Renina.\n
+		&lt;b>IDPP4&lt;/b>\tInhibidor de la Dipeptidil Peptidasa 4.\n
 		&lt;b>IECA&lt;/b>\t\tInhibidor de la Enzima Convertidora de Angiotensina.\n
-		&lt;b>LDL&lt;/b>\t\tLow Density Lipopretein.\n
-		&lt;b>PA&lt;/b>\t\tPresión Arterial.\n
-		&lt;b>VHB&lt;/b>\t\tVirus de la Hepatitis B.\n
+		&lt;b>LDL&lt;/b>\t\t\tLow Density Lipopretein.\n
+		&lt;b>PA&lt;/b>\t\t\t\tPresión Arterial.\n
+		&lt;b>VHB&lt;/b>\t\t\tVirus de la Hepatitis B.\n
 	</string>
-	<string name="title_comite">COMITÉ DE EDICIÓN Y COLABORADORES</string>
+	<string name="title_comite">Comité de edición y colaboradores</string>
 	<string name="desc_comite">
 	    &lt;u>Autores médicos:&lt;/u>\n\n
 	    \t&lt;b>Elena Oliva Dámaso&lt;/b>\n
@@ -458,9 +490,9 @@
 	    &lt;u>Propietario y Vendedor:&lt;/u>\n\n
 	    \t&lt;b>Madilon Medical Care S.L.P.&lt;/b>\n
 	</string>
-	<string name="title_bibliografia">BIBLIOGRAFÍA Y REFERENCIAS</string>
+	<string name="title_bibliografia">Bibliografía y referencias</string>
 	<string name="desc_bibliografia">
-	    - Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available <a href="http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf">here</a>\n
+	    - Documento de consenso sobre la enfermedad renal crónica. 27 Noviembre 2012. Available at http://www.senefro.org/modules/news/images/v._5.doc_consenso_final___131212_copy1.pdf\n
 		- KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int (Suppl) 2013;3(1);1-308.\n
 		- Galcerán JM et al. Documento de consenso sobre atención a la enfermedad renal crónica. Hipertens Riesgo Vasc. 2013;30(3):107-114.\n
 		- Gómez-Huelgas R. et al. Documento de Consenso sobre el tratamiento de la diabetes tipo 2 en el paciente con enfermedad renal crónica. Nefrologia 2014;34(1).\n
@@ -468,7 +500,29 @@
 		- Martínez-Castelao A, et al. Documendo de consenso para la detección y manejo de la enfermedad renal crónica. Nefrologia 2014;34(2):243-62.\n
 		- Uptodate 2014.\n
 	</string>
-	<string name="title_contacto">CONTACTO</string>
-	<string name="title_share">COMPARTE LA APP</string>
-	<string name="title_valorar">VALORAR LA APP</string>
+	<string name="title_contacto">Contacto</string>
+	<string name="title_share">Comparte la APP</string>
+	<string name="title_valorar">Valorar la APP</string>
+	
+	<!-- Symbols -->
+	<string name="symbolsTitle">&lt;u>Símbolos utilizados&lt;/u></string>
+	<string name="masculino">Sexo masculino</string>
+	<string name="femenino">Sexo femenino</string>
+	<string name="nextScreen">Siguiente pantalla</string>
+	<string name="docConsenso">Acceso al documento de consenso sobre la Enfermedad Renal Crónica(27 noviembre 2012)</string>
+	<string name="info">Información</string>
+	<string name="contact">Contacto</string>
+	<string name="masSymbol">Mostrar más</string>
+	<string name="ocultarSymbol">Ocultar</string>
+	
+	<!-- ExplainResulActivity -->
+	<string name="title_explainResult">RESUMEN</string>
+	<string name="varon">Varón</string>
+	<string name="mujer">Mujer</string> 
+	
+	<string name="desc_explain" formatted="false">&#37;s de &#37;d años de edad, con FGe por MDRD-IDMS &#37;s y por CDK EPI &#37;s, con cociente albuminuria/creatinina de 
+	    &#37;s, que presenta parámetros de &lt;b>enfermedad renal crónica estadio &#37;s&lt;/b> (FG por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>) 
+	    &lt;b>&#37;s&lt;/b> (cociente albúmina/creatinina &#37;s mg/g) según la clasificación pronóstica de KDIGO de 2012 (ver tabla más abajo).\n\nSe recomienda &lt;b>&#37;s&lt;/b>.
+	</string>
+	<string name="tableDescription">Clasificación compuesta por los riesgos relativos según FG y Albuminuria</string>
 </resources>

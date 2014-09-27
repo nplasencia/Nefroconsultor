@@ -7,6 +7,14 @@ public class Estadio {
 	private AlbuminuriaEnum albuminuriaEstadio;
 	private FgeEnum fgeEstadio;
 	private int background;
+	private int tabla;
+	
+	public Estadio (FgeEnum fgeEstadio, AlbuminuriaEnum albuminuriaEstadio, int backgroundColor, int drawableTabla) {
+		this.fgeEstadio = fgeEstadio;
+		this.albuminuriaEstadio = albuminuriaEstadio;
+		this.background = backgroundColor;
+		this.tabla = drawableTabla;
+	}
 	
 	public AlbuminuriaEnum getAlbuminuriaEstadio() {
 		return albuminuriaEstadio;
@@ -27,6 +35,13 @@ public class Estadio {
 	}
 	public void setBackground(int background) {
 		this.background = background;
+	}
+	
+	public int getTabla() {
+		return tabla;
+	}
+	public void setTabla(int tabla) {
+		this.tabla = tabla;
 	}
 	
 	

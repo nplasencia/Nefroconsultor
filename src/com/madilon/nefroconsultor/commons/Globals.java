@@ -11,6 +11,11 @@ public class Globals {
 	public static String creaIntent = "CREATINIA";
 	public static String razaIntent = "RAZANEGRA";
 	public static String otrosIntent = "OTROS";
+	public static String cdkEpiIntent = "CDKEPI";
+	public static String mdrdIdmsIntent = "MDRDIDMS";
+	public static String albuEstadioIntent = "ALBU_ESTADIO";
+	public static String fgEstadioIntent = "FG_ESTADIO";
+	public static String resultadoTextIntent = "RESULTADO";
 	
 	/**
 	 * Constantes de las preferences

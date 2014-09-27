@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main_bitmap"
+    tools:context="com.madilon.nefroconsultor.ui.TableActivity" >
+    
+    <ImageView
+        android:id="@+id/img_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/tableDescription"
+        android:adjustViewBounds="true" 
+        android:src="@drawable/table_estadios"/>
+    
+</LinearLayout>

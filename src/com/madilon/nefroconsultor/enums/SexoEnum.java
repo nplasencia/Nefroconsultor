@@ -1,19 +1,26 @@
 package com.madilon.nefroconsultor.enums;
 
+import com.madilon.nefroconsultor.R;
+
 public enum SexoEnum {
-	MASCULINO(0, "Masculino"), 
-	FEMENINO(1, "Femenino");
+	MASCULINO (0, R.string.varon, "Masculino"), 
+	FEMENINO  (1, R.string.mujer, "Femenino");
 	
 	private Integer id;
+	private int stringText;
 	private String description;
 	
-	private SexoEnum(Integer id, String description) {
+	private SexoEnum(Integer id, int stringText, String description) {
 		this.id = id;
+		this.stringText = stringText;
 		this.description = description;
 	}
 	
 	public Integer getId() {
 		return this.id;
+	}
+	public int getStringText() {
+		return this.stringText;
 	}
 	public String getDescription() {
 		return this.description;

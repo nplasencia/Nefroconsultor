@@ -57,6 +57,12 @@ public class InformacionesItemAdapter extends BaseAdapter {
 		titulo.setTypeface(Typefaces.SignikaBold(context));
 		titulo.setText(item.getTitulo());
 		
+		final View symbols = vi.findViewById(R.id.symbols);
+		if (item.getView() != null && symbols.findViewById(R.id.symbolsView)==null) {
+			View symbolsView = LayoutInflater.from(context).inflate(item.getView(), null);
+			((ViewGroup) symbols).addView(symbolsView);
+		}
+		
 		if (item.getDescripcion() != null) {
 		
 			final TextView descripcion = (TextView) vi.findViewById(R.id.descripcion);
@@ -80,6 +86,7 @@ public class InformacionesItemAdapter extends BaseAdapter {
 					buttonMenosSup.setVisibility(View.VISIBLE);
 					buttonMas.setVisibility(View.GONE);
 					descripcion.setVisibility(View.VISIBLE);
+					symbols.setVisibility(View.VISIBLE);
 					if (position == (items.size()-1)) {
 						((ListView) parent).setSelection(items.size()-1);
 					}
@@ -93,6 +100,7 @@ public class InformacionesItemAdapter extends BaseAdapter {
 					buttonMenosSup.setVisibility(View.GONE);
 					buttonMas.setVisibility(View.VISIBLE);
 					descripcion.setVisibility(View.GONE);
+					symbols.setVisibility(View.GONE);
 				}
 			}; 
 			
@@ -101,6 +109,7 @@ public class InformacionesItemAdapter extends BaseAdapter {
 		} else {
 			vi.findViewById(R.id.btn_mostrarMas).setVisibility(View.GONE);
 		}
+		
 		return vi;
 	}
 }

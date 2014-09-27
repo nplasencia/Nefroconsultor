@@ -20,8 +20,7 @@
 	        android:layout_marginTop="5dp"
 	        android:textColor="@color/titleTextColor"
 	        android:textSize="@dimen/otrosMotivosTitle"
-	        android:gravity="center_vertical"
-	        android:text="Revisar hábitos higiénico-dietéticos. Actitudes y estilo de vida." />
+	        android:gravity="center_vertical" />
 	    
         <Button
             android:id="@+id/btn_mostrarMas"
@@ -61,7 +60,16 @@
         android:textColor="@color/titleTextColor"
         android:textSize="@dimen/otrosMotivosDesc"
         android:layout_marginTop="5dp"
+        android:autoLink="all"
         android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/symbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
     
     <Button
         android:id="@+id/btn_mostrarMenos"

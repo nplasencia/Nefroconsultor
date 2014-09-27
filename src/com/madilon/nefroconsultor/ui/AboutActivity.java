@@ -32,17 +32,17 @@ public class AboutActivity extends ActionBarNefroConsultor {
 		((TextView) findViewById(R.id.cabecera)).setTypeface(Typefaces.SignikaBold(this));
 		
 		List<Informacion> informaciones = new ArrayList<Informacion>();
-		informaciones.add(new Informacion(getString(R.string.title_presentacion), getString(R.string.desc_presentacion), 1, null));
-		informaciones.add(new Informacion(getString(R.string.title_descripcion), getString(R.string.desc_descripcion), 2, null));
-		informaciones.add(new Informacion(getString(R.string.title_advertencias), getString(R.string.desc_advertencias), 3, null));
-		informaciones.add(new Informacion(getString(R.string.title_condicionestotal), getString(R.string.desc_condicionestotal), 4, null));
-		informaciones.add(new Informacion(getString(R.string.title_guia), getString(R.string.desc_guia), 5, null));
-		informaciones.add(new Informacion(getString(R.string.title_abreviaturas), getString(R.string.desc_abreviaturas), 6, null));
-		informaciones.add(new Informacion(getString(R.string.title_comite), getString(R.string.desc_comite), 7, null));
-		informaciones.add(new Informacion(getString(R.string.title_bibliografia), getString(R.string.desc_bibliografia), 8, null));
-		informaciones.add(new Informacion(getString(R.string.title_contacto), null, 9, NefroConsultorHelper.getEmailIntent(this)));
-		informaciones.add(new Informacion(getString(R.string.title_share), null, 10, NefroConsultorHelper.getShareIntent(this)));
-		informaciones.add(new Informacion(getString(R.string.title_valorar), null, 11, NefroConsultorHelper.getValorarIntent(this)));
+		informaciones.add(new Informacion(getString(R.string.title_presentacion), getString(R.string.desc_presentacion), 1, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_descripcion), getString(R.string.desc_descripcion), 2, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_advertencias), getString(R.string.desc_advertencias), 3, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_condicionestotal), getString(R.string.desc_condicionestotal), 4, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_guia), "", 5, null, R.layout.tutorial));
+		informaciones.add(new Informacion(getString(R.string.title_abreviaturas), getString(R.string.desc_abreviaturas), 6, null, R.layout.symbols));
+		informaciones.add(new Informacion(getString(R.string.title_comite), getString(R.string.desc_comite), 7, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_bibliografia), getString(R.string.desc_bibliografia), 8, null, null));
+		informaciones.add(new Informacion(getString(R.string.title_contacto), null, 9, NefroConsultorHelper.getEmailIntent(this), null));
+		informaciones.add(new Informacion(getString(R.string.title_share), null, 10, NefroConsultorHelper.getShareIntent(this), null));
+		informaciones.add(new Informacion(getString(R.string.title_valorar), null, 11, NefroConsultorHelper.getValorarIntent(this), null));
 		
 		final ListAdapter adapter = new InformacionesItemAdapter(this, informaciones);
 		

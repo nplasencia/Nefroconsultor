@@ -141,7 +141,7 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			TextView textCasoEspecial = (TextView) findViewById(R.id.text_noRemitirCaso3Subtitle_elena);
 			textCasoEspecial.setTypeface(Typefaces.SignikaLight(this));
 			textCasoEspecial.setVisibility(View.VISIBLE);
-			if (albuminuria >=30 && albuminuria < 299) {
+			if (albuminuriaEstadio.equals(AlbuminuriaEnum.A2)) {
 				recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
 			}
 			if (edad > 80) {
@@ -157,12 +157,20 @@ public class ResultActivity extends ActionBarNefroConsultor {
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso2Subtitle);
 			recomendacionesDesc.setTypeface(Typefaces.SignikaLight(this));
 			recomendacionesDesc.setText(R.string.noRemitirCaso2Desc);
-		} else if (albuminuria >=30 && albuminuria < 299) {
+		} else if (albuminuriaEstadio.equals(AlbuminuriaEnum.A2)) {
 			recomendacionesTitle.setText(R.string.noRemitir);
-			recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
+			if (fgEstadio.equals(FgeEnum.G3a)) {
+				recomendacionesSubtitle.setText(SpannableHelper.applyTags(getString(R.string.noRemitirCaso3_2Subtitle), this), BufferType.SPANNABLE);
+			} else {
+				recomendacionesSubtitle.setText(R.string.noRemitirCaso3Subtitle);
+			}
 		} else if (albuminuria < 30 && (fgEstadio.getId() < FgeEnum.G3a.getId() && albuminuriaEstadio.getId() < AlbuminuriaEnum.A2.getId())) {
 			recomendacionesTitle.setText(R.string.noRemitir);
 			recomendacionesSubtitle.setText(R.string.noRemitirCaso4Subtitle);
+		} else if (fgEstadio.equals(FgeEnum.G3a) && albuminuriaEstadio.getId() < AlbuminuriaEnum.A2.getId()) {
+			recomendacionesTitle.setText(R.string.noRemitir);
+			recomendacionesSubtitle.setTypeface(Typefaces.SignikaLight(this));
+			recomendacionesSubtitle.setText(R.string.noRemitirCaso3_1Subtitle);
 		}
 		
 		final Button buttonRecomendaciones = ((Button) findViewById(R.id.btn_recomendaciones));

@@ -40,8 +40,7 @@
         android:contentDescription="@string/tableDescription"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/table_estadios"/>
+        android:layout_gravity="center_horizontal"/>
     
 </LinearLayout>
 </ScrollView>

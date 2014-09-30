@@ -1201,7 +1201,6 @@ containing a value of this type.
         public static final int tabla_g5_a2=0x7f0200ae;
         public static final int tabla_g5_a3a=0x7f0200af;
         public static final int tabla_g5_a3b=0x7f0200b0;
-        public static final int table_estadios=0x7f0200b1;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1441,35 +1440,35 @@ containing a value of this type.
         public static final int albuminuria=0x7f0a0019;
         public static final int anos=0x7f0a0016;
         public static final int app_name=0x7f0a000d;
-        public static final int btnRecomendaciones=0x7f0a004a;
+        public static final int btnRecomendaciones=0x7f0a004c;
         public static final int calcular=0x7f0a001f;
         public static final int clasificacion=0x7f0a0036;
         public static final int cociente=0x7f0a001a;
-        public static final int condiciones_acepto=0x7f0a006a;
-        public static final int condiciones_check=0x7f0a0068;
-        public static final int contact=0x7f0a0085;
+        public static final int condiciones_acepto=0x7f0a006c;
+        public static final int condiciones_check=0x7f0a006a;
+        public static final int contact=0x7f0a0087;
         public static final int creatinina=0x7f0a0018;
-        public static final int debes_aceptar=0x7f0a0069;
+        public static final int debes_aceptar=0x7f0a006b;
         /**  Main activity 
          */
         public static final int defaultValue=0x7f0a0014;
-        public static final int desc_abreviaturas=0x7f0a0077;
-        public static final int desc_advertencias=0x7f0a0066;
-        public static final int desc_bibliografia=0x7f0a007b;
-        public static final int desc_comite=0x7f0a0079;
-        public static final int desc_condicionestotal=0x7f0a006c;
-        public static final int desc_descripcion=0x7f0a0064;
-        public static final int desc_explain=0x7f0a008b;
-        public static final int desc_guia1=0x7f0a006e;
-        public static final int desc_guia2=0x7f0a006f;
-        public static final int desc_guia3=0x7f0a0070;
-        public static final int desc_guia4=0x7f0a0071;
-        public static final int desc_guia5=0x7f0a0072;
-        public static final int desc_guia6=0x7f0a0073;
-        public static final int desc_guia7=0x7f0a0074;
-        public static final int desc_guia8=0x7f0a0075;
-        public static final int desc_presentacion=0x7f0a0062;
-        public static final int docConsenso=0x7f0a0083;
+        public static final int desc_abreviaturas=0x7f0a0079;
+        public static final int desc_advertencias=0x7f0a0068;
+        public static final int desc_bibliografia=0x7f0a007d;
+        public static final int desc_comite=0x7f0a007b;
+        public static final int desc_condicionestotal=0x7f0a006e;
+        public static final int desc_descripcion=0x7f0a0066;
+        public static final int desc_explain=0x7f0a008d;
+        public static final int desc_guia1=0x7f0a0070;
+        public static final int desc_guia2=0x7f0a0071;
+        public static final int desc_guia3=0x7f0a0072;
+        public static final int desc_guia4=0x7f0a0073;
+        public static final int desc_guia5=0x7f0a0074;
+        public static final int desc_guia6=0x7f0a0075;
+        public static final int desc_guia7=0x7f0a0076;
+        public static final int desc_guia8=0x7f0a0077;
+        public static final int desc_presentacion=0x7f0a0064;
+        public static final int docConsenso=0x7f0a0085;
         public static final int doubleFormat=0x7f0a000f;
         public static final int edad=0x7f0a0015;
         public static final int emailSubject=0x7f0a0020;
@@ -1480,50 +1479,52 @@ containing a value of this type.
         public static final int explicacionMotivo5=0x7f0a002b;
         public static final int explicacionMotivo6=0x7f0a002d;
         public static final int explicacionMotivoOtros=0x7f0a002f;
-        public static final int femenino=0x7f0a0081;
+        public static final int femenino=0x7f0a0083;
         public static final int fgecdk=0x7f0a0033;
-        public static final int info=0x7f0a0084;
-        public static final int masSymbol=0x7f0a0086;
-        public static final int masculino=0x7f0a0080;
+        public static final int info=0x7f0a0086;
+        public static final int masSymbol=0x7f0a0088;
+        public static final int masculino=0x7f0a0082;
         public static final int mdrd=0x7f0a0034;
         public static final int mgDl=0x7f0a001b;
         public static final int mgg=0x7f0a001c;
         public static final int mostrarMas=0x7f0a0030;
         public static final int mostrarMenos=0x7f0a0031;
-        public static final int mujer=0x7f0a008a;
-        public static final int nextScreen=0x7f0a0082;
+        public static final int mujer=0x7f0a008c;
+        public static final int nextScreen=0x7f0a0084;
         public static final int noRemitir=0x7f0a003e;
         public static final int noRemitirCaso1Desc=0x7f0a0040;
         public static final int noRemitirCaso1Subtitle=0x7f0a003f;
         public static final int noRemitirCaso2Desc=0x7f0a0042;
         public static final int noRemitirCaso2Subtitle=0x7f0a0041;
         public static final int noRemitirCaso3Subtitle=0x7f0a0043;
-        public static final int noRemitirCaso3Subtitle_80=0x7f0a0044;
-        public static final int noRemitirCaso3Subtitle_elena=0x7f0a0045;
-        public static final int noRemitirCaso4Subtitle=0x7f0a0046;
-        public static final int ocultarSymbol=0x7f0a0087;
+        public static final int noRemitirCaso3Subtitle_80=0x7f0a0046;
+        public static final int noRemitirCaso3Subtitle_elena=0x7f0a0047;
+        public static final int noRemitirCaso3_1Subtitle=0x7f0a0044;
+        public static final int noRemitirCaso3_2Subtitle=0x7f0a0045;
+        public static final int noRemitirCaso4Subtitle=0x7f0a0048;
+        public static final int ocultarSymbol=0x7f0a0089;
         public static final int otrosMotivos=0x7f0a001e;
         public static final int raza=0x7f0a001d;
-        public static final int recomendacion10title=0x7f0a005e;
-        public static final int recomendacion10txt=0x7f0a005f;
-        public static final int recomendacion1title=0x7f0a004c;
-        public static final int recomendacion1txt=0x7f0a004d;
-        public static final int recomendacion2title=0x7f0a004e;
-        public static final int recomendacion2txt=0x7f0a004f;
-        public static final int recomendacion3title=0x7f0a0050;
-        public static final int recomendacion3txt=0x7f0a0051;
-        public static final int recomendacion4title=0x7f0a0052;
-        public static final int recomendacion4txt=0x7f0a0053;
-        public static final int recomendacion5title=0x7f0a0054;
-        public static final int recomendacion5txt=0x7f0a0055;
-        public static final int recomendacion6title=0x7f0a0056;
-        public static final int recomendacion6txt=0x7f0a0057;
-        public static final int recomendacion7title=0x7f0a0058;
-        public static final int recomendacion7txt=0x7f0a0059;
-        public static final int recomendacion8title=0x7f0a005a;
-        public static final int recomendacion8txt=0x7f0a005b;
-        public static final int recomendacion9title=0x7f0a005c;
-        public static final int recomendacion9txt=0x7f0a005d;
+        public static final int recomendacion10title=0x7f0a0060;
+        public static final int recomendacion10txt=0x7f0a0061;
+        public static final int recomendacion1title=0x7f0a004e;
+        public static final int recomendacion1txt=0x7f0a004f;
+        public static final int recomendacion2title=0x7f0a0050;
+        public static final int recomendacion2txt=0x7f0a0051;
+        public static final int recomendacion3title=0x7f0a0052;
+        public static final int recomendacion3txt=0x7f0a0053;
+        public static final int recomendacion4title=0x7f0a0054;
+        public static final int recomendacion4txt=0x7f0a0055;
+        public static final int recomendacion5title=0x7f0a0056;
+        public static final int recomendacion5txt=0x7f0a0057;
+        public static final int recomendacion6title=0x7f0a0058;
+        public static final int recomendacion6txt=0x7f0a0059;
+        public static final int recomendacion7title=0x7f0a005a;
+        public static final int recomendacion7txt=0x7f0a005b;
+        public static final int recomendacion8title=0x7f0a005c;
+        public static final int recomendacion8txt=0x7f0a005d;
+        public static final int recomendacion9title=0x7f0a005e;
+        public static final int recomendacion9txt=0x7f0a005f;
         public static final int recomendaciones=0x7f0a0039;
         public static final int remitir=0x7f0a003b;
         public static final int remitirCaso1=0x7f0a003c;
@@ -1535,40 +1536,40 @@ containing a value of this type.
         public static final int sexo=0x7f0a0017;
         /**  Symbols 
          */
-        public static final int symbolsTitle=0x7f0a007f;
-        public static final int tableDescription=0x7f0a008c;
-        public static final int text_recomendaciones_asterisco=0x7f0a0047;
-        public static final int text_recomendaciones_casoA2=0x7f0a0048;
-        public static final int text_recomendaciones_casoA2_elena=0x7f0a0049;
-        public static final int title_abreviaturas=0x7f0a0076;
+        public static final int symbolsTitle=0x7f0a0081;
+        public static final int tableDescription=0x7f0a008e;
+        public static final int text_recomendaciones_asterisco=0x7f0a0049;
+        public static final int text_recomendaciones_casoA2=0x7f0a004a;
+        public static final int text_recomendaciones_casoA2_elena=0x7f0a004b;
+        public static final int title_abreviaturas=0x7f0a0078;
         /**  Acerca de 
          */
-        public static final int title_activity_about=0x7f0a0060;
+        public static final int title_activity_about=0x7f0a0062;
         /**  Otros motivos 
          */
         public static final int title_activity_otros=0x7f0a0021;
         /**  Resultados 
          */
         public static final int title_activity_result=0x7f0a0032;
-        public static final int title_advertencias=0x7f0a0065;
-        public static final int title_bibliografia=0x7f0a007a;
-        public static final int title_comite=0x7f0a0078;
+        public static final int title_advertencias=0x7f0a0067;
+        public static final int title_bibliografia=0x7f0a007c;
+        public static final int title_comite=0x7f0a007a;
         /**  Condiciones generales de uso 
          */
-        public static final int title_condiciones=0x7f0a0067;
-        public static final int title_condicionestotal=0x7f0a006b;
-        public static final int title_contacto=0x7f0a007c;
-        public static final int title_descripcion=0x7f0a0063;
+        public static final int title_condiciones=0x7f0a0069;
+        public static final int title_condicionestotal=0x7f0a006d;
+        public static final int title_contacto=0x7f0a007e;
+        public static final int title_descripcion=0x7f0a0065;
         /**  ExplainResulActivity 
          */
-        public static final int title_explainResult=0x7f0a0088;
-        public static final int title_guia=0x7f0a006d;
-        public static final int title_presentacion=0x7f0a0061;
+        public static final int title_explainResult=0x7f0a008a;
+        public static final int title_guia=0x7f0a006f;
+        public static final int title_presentacion=0x7f0a0063;
         /**  Otras recomendaciones 
          */
-        public static final int title_recomendaciones_otros=0x7f0a004b;
-        public static final int title_share=0x7f0a007d;
-        public static final int title_valorar=0x7f0a007e;
+        public static final int title_recomendaciones_otros=0x7f0a004d;
+        public static final int title_share=0x7f0a007f;
+        public static final int title_valorar=0x7f0a0080;
         public static final int tituloMotivo1=0x7f0a0022;
         public static final int tituloMotivo2=0x7f0a0024;
         public static final int tituloMotivo3=0x7f0a0026;
@@ -1577,7 +1578,7 @@ containing a value of this type.
         public static final int tituloMotivo6=0x7f0a002c;
         public static final int tituloMotivoOtros=0x7f0a002e;
         public static final int units=0x7f0a0035;
-        public static final int varon=0x7f0a0089;
+        public static final int varon=0x7f0a008b;
     }
     public static final class style {
         /** 

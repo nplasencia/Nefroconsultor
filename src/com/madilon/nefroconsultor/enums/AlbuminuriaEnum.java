@@ -1,11 +1,11 @@
 package com.madilon.nefroconsultor.enums;
 
 public enum AlbuminuriaEnum {
-	A1a (0, "A1",    0, "<10"),
-	A1b (1, "A1",   10, "10-29"),
+	A1a (0, "A1",    0, "<30"),
+	A1b (1, "A1",   10, "<30"),
 	A2  (2, "A2",   30, "30-299"),
-	A3a (3, "A3",  300, "300-1999"),
-	A3b (4, "A3", 2000, "≥2000");
+	A3a (3, "A3",  300, "≥300"),
+	A3b (4, "A3", 2000, "≥300");
 	
 	private Integer id;
 	private String description;
@@ -43,11 +43,11 @@ public enum AlbuminuriaEnum {
 	public static AlbuminuriaEnum albuminuriaEstadios(Double albuminuria) {
 		if (albuminuria >= A3b.getLimit()) {
 			return AlbuminuriaEnum.A3b;
-		} else if (albuminuria > A3a.getLimit()) {
+		} else if (albuminuria >= A3a.getLimit()) {
 			return AlbuminuriaEnum.A3a;
-		} else if (albuminuria > A2.getLimit()) {
+		} else if (albuminuria >= A2.getLimit()) {
 			return AlbuminuriaEnum.A2;
-		} else if (albuminuria > A1b.getLimit()) {
+		} else if (albuminuria >= A1b.getLimit()) {
 			return AlbuminuriaEnum.A1b;
 		}
 		return AlbuminuriaEnum.A1a;

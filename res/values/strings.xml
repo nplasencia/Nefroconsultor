@@ -84,6 +84,11 @@
     <string name="noRemitirCaso2Desc">EN ALGUNAS GUÍAS SE CONSIDERA QUE EN ESTE ESTADIO TENDRÍA CRITERIO DE DERIVACIÓN A ATENCIÓN ESPECIALIZADA.</string>
     <string name="noRemitirCaso3Subtitle">Confirmar la presencia de albuminuria moderada en al menos 2 ocasiones durante al menos 3 meses. Se recomienda un control 
         de factores de riesgo cardiovascular.\n</string>
+    <string name="noRemitirCaso3_1Subtitle">Control de factores de riesgo cardiovascular y control analítico periódico. Revisar medicación, hábitos higiénico-dietéticos y control de presión arterial, 
+        diabetes mellitus y dislipemia si procede.</string>
+    <string name="noRemitirCaso3_2Subtitle">Confirmar la presencia de albuminuria moderada en al menos 2 ocasiones durante al menos 3 meses.\n\n
+        &lt;light>Control de factores de riesgo cardiovascular y control analítico periódico. Revisar medicación, hábitos higiénico-dietéticos y control de presión arterial, 
+        diabetes mellitus y dislipemia si procede.&lt;/light></string>
     <string name="noRemitirCaso3Subtitle_80">\nDado que la progresión de la enfermedad renal crónica en población anciana es muy poco frecuente, se puede 
         aceptar que los pacientes mayores de 80 años con función renal estable o con lento deterioro de la misma (&lt; 5 ml/min/1.73m<sup><small>2</small></sup>/año) 
         sin proteinuria, ni anemia o signos de alarma, pueden llevar seguimiento con actitud conservadora en atención primaria</string>
@@ -520,8 +525,8 @@
 	<string name="varon">Varón</string>
 	<string name="mujer">Mujer</string> 
 	
-	<string name="desc_explain" formatted="false">&#37;s de &#37;d años de edad, con FGe por MDRD-IDMS &#37;s y por CDK EPI &#37;s, con cociente albuminuria/creatinina de 
-	    &#37;s, que presenta parámetros de &lt;b>enfermedad renal crónica estadio &#37;s&lt;/b> (FG por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>) 
+	<string name="desc_explain" formatted="false">&#37;s de &#37;d años de edad, con FGe por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> y por CDK EPI &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, con cociente albuminuria/creatinina de 
+	    &#37;s mg/g, que presenta parámetros de &lt;b>Enfermedad Renal Crónica estadio &#37;s&lt;/b> (FG por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>) 
 	    &lt;b>&#37;s&lt;/b> (cociente albúmina/creatinina &#37;s mg/g) según la clasificación pronóstica de KDIGO de 2012 (ver tabla más abajo).\n\nSe recomienda &lt;b>&#37;s&lt;/b>.
 	</string>
 	<string name="tableDescription">Clasificación compuesta por los riesgos relativos según FG y Albuminuria</string>

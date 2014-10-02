@@ -37,9 +37,10 @@
 	            android:id="@+id/text_edad"
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
+	            android:layout_marginRight="10dp"
 	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
-	            android:gravity="center_vertical|right"
+	            android:gravity="center_vertical|end"
 	            android:text="@string/edad"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/normalText" />
@@ -67,7 +68,8 @@
 	                android:layout_height="match_parent"
 	                android:layout_gravity="bottom"
 	                android:layout_marginLeft="5dp"
-	                android:gravity="right"
+	                android:layout_marginStart="5dp"
+	                android:gravity="end"
 	                android:text="@string/anos"
 	                android:textColor="@color/titleTextColor"
 	                android:textSize="@dimen/unitsText" />
@@ -85,9 +87,10 @@
 	            android:id="@+id/text_sexo"
 	            android:layout_width="0dp"
 	            android:layout_height="wrap_content"
+	            android:layout_marginRight="10dp"
 	            android:layout_marginEnd="10dp"
 	            android:layout_weight="1"
-	            android:gravity="right"
+	            android:gravity="end"
 	            android:text="@string/sexo"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/normalText" />
@@ -104,7 +107,8 @@
 		            android:layout_width="48dp"
 		            android:background="@null"
 		            android:drawableStart="@drawable/btn_masculino_desact"
-		            android:gravity="center_vertical|left"/>
+		            android:drawableLeft="@drawable/btn_masculino_desact"
+		            android:gravity="center_vertical|start"/>
 	            
 	            <!-- Se han tenido que poner las medidas para que no existan problemas en ldpi -->
 	            <Button 
@@ -112,9 +116,11 @@
 		            android:layout_height="45dp"
 		            android:layout_width="48dp"
 		            android:background="@null"
+		            android:layout_marginStart="17dp"
 		            android:layout_marginLeft="17dp"
+		            android:drawableLeft="@drawable/btn_femenino_desact"
 		            android:drawableStart="@drawable/btn_femenino_desact"
-		            android:gravity="center_vertical|left"/>
+		            android:gravity="center_vertical|end"/>
 	            
 	        </LinearLayout>
 	    </LinearLayout>
@@ -130,8 +136,9 @@
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
 	            android:layout_marginEnd="10dp"
+	            android:layout_marginRight="10dp"
 	            android:layout_weight="1"
-	            android:gravity="center_vertical|right"
+	            android:gravity="center_vertical|end"
 	            android:text="@string/creatinina"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/normalText" />
@@ -158,8 +165,9 @@
 	                android:layout_width="wrap_content"
 	                android:layout_height="match_parent"
 	                android:layout_gravity="bottom"
+	                android:layout_marginStart="5dp"
 	                android:layout_marginLeft="5dp"
-	                android:gravity="right"
+	                android:gravity="end"
 	                android:text="@string/mgDl"
 	                android:textColor="@color/titleTextColor"
 	                android:textSize="@dimen/unitsText" />
@@ -177,15 +185,16 @@
 	            android:layout_width="0dp"
 	            android:layout_height="wrap_content"
 	            android:layout_marginEnd="10dp"
+	            android:layout_marginRight="10dp"
 	            android:layout_weight="1"
-	            android:gravity="center_vertical|right"
+	            android:gravity="center_vertical|end"
 	            android:orientation="vertical" >
 	
 	            <TextView
 	                android:id="@+id/text_albuminuria"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:gravity="center_vertical|right"
+	                android:gravity="center_vertical|end"
 	                android:text="@string/albuminuria"
 	                android:textColor="@color/titleTextColor"
 	                android:textSize="@dimen/normalText" />
@@ -195,7 +204,7 @@
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_marginTop="-6dp"
-	                android:gravity="right"
+	                android:gravity="end"
 	                android:text="@string/cociente"
 	                android:textColor="@color/titleTextColor"
 	                android:textSize="@dimen/explanationText" />
@@ -224,7 +233,8 @@
 	                android:layout_height="match_parent"
 	                android:layout_gravity="bottom"
 	                android:layout_marginLeft="5dp"
-	                android:gravity="right"
+	                android:layout_marginStart="5dp"
+	                android:gravity="end"
 	                android:text="@string/mgg"
 	                android:textColor="@color/titleTextColor"
 	                android:textSize="@dimen/unitsText" />
@@ -242,8 +252,9 @@
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
 	            android:layout_marginEnd="10dp"
+	            android:layout_marginRight="10dp"
 	            android:layout_weight="1"
-	            android:gravity="center_vertical|right"
+	            android:gravity="center_vertical|end"
 	            android:text="@string/raza"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/normalText" />
@@ -254,7 +265,7 @@
 	            android:layout_height="fill_parent"
 	            android:layout_weight="1"
 	            android:button="@drawable/custom_check"
-	            android:gravity="center_vertical|left" />
+	            android:gravity="center_vertical|start" />
 	    </LinearLayout>
 	
 	    <LinearLayout
@@ -268,8 +279,9 @@
 	            android:layout_width="0dp"
 	            android:layout_height="fill_parent"
 	            android:layout_marginEnd="10dp"
+	            android:layout_marginRight="10dp"
 	            android:layout_weight="1"
-	            android:gravity="center_vertical|right"
+	            android:gravity="center_vertical|end"
 	            android:text="@string/otrosMotivos"
 	            android:textColor="@color/titleTextColor"
 	            android:textSize="@dimen/normalText" />
@@ -281,6 +293,7 @@
 	            android:layout_weight="1"
 	            android:background="@null"
 	            android:drawableStart="@drawable/btn_next"
+	            android:drawableLeft="@drawable/btn_next"
 	            android:gravity="center_vertical|start"/>
 	        
 	    </LinearLayout>
@@ -292,7 +305,9 @@
 	        android:gravity="center_vertical|center_horizontal"
 	        android:orientation="horizontal"
 	        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	        android:layout_marginStart="@dimen/activity_horizontal_margin"
         	android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        	android:layout_marginRight="@dimen/activity_horizontal_margin"
 	        android:layout_marginBottom="5dp">
 	        
 		    <Button 

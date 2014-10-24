@@ -23,6 +23,7 @@
     </style>
     
     <style name="NefroConsultorActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/actionBarBackground</item>
         <item name="background">@color/actionBarBackground</item>
         <item name="displayOptions">showHome|useLogo</item>
     </style>

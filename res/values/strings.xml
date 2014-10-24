@@ -9,7 +9,10 @@
     <string name="action_info">Acerca de</string>
     <string name="action_email">Sugerencias</string>
     <string name="action_refresh">Reiniciar datos</string>
-
+	
+    <!-- Toast exceptions -->
+    <string name="noPdfApp">No se ha encontrado una aplicación para leer pdf en tu dispositivo. Instálalo y vuelve a intentarlo.</string>
+    
     <!-- Main activity -->
     <string name="defaultValue">0</string>
     <string name="edad">Edad</string>
@@ -117,8 +120,8 @@
 		- En todos, se recomienda evitar el sobrepeso u obesidad, teniendo en cuenta que las necesidades energéticas son similares a la población general.\n\n
 		2.- Abstención del hábito tabáquico.\n\n
 	    - En pacientes con enfermedad renal parece segura la utilización de terapia de sustitución de nicotina (parches, chicles, caramelos) y su asociación 
-	    con Bupropion a dosis más bajas de la habitual (150 mg/24h) en fases avanzadas de la enfermedad. El uso de Vareniclina a dosis habituales parece seguro 
-	    e igualmente que con Bupropion se pueden utilizar a mitad de dosis (1 mg/24h) que en población general.\n\n
+	    con Bupropion a dosis más bajas de la habitual en fases avanzadas de la enfermedad. El uso de Vareniclina a dosis habituales parece seguro 
+	    e igualmente que con Bupropion se pueden utilizar a mitad de dosis que en población general.\n\n
 	    3.- La ingesta moderada de alcohol no se considera perjudicial.\n\n
 	    4.- Ejercicio físico: Como norma general se recomienda 30-60 minutos de ejercicio moderado 4 a 7 días por semana.
 	</string>
@@ -142,7 +145,7 @@
 	    • Suspender temporalmente la &lt;b>metformina&lt;/b> ante circunstancias que pongan en riesgo la función renal (vómitos, diarrea, radiocontrastes, cirugía 
 	    mayor, uso de AINEs o diuréticos), dado el riesgo de acidosis láctica.\n
 	    • La &lt;b>repaglinida&lt;/b> puede utilizarse con cualquier grado de insuficiencia renal, incluso en pacientes en diálisis. Sin embargo es recomendable 
-	    iniciar el tratamiento con una dosis baja (0.5 mg).\n
+	    iniciar el tratamiento con una dosis baja.\n
 	    • Las gliptinas (&lt;b>inhibidores de la DPP4&lt;/b>) son fármacos que han demostrado ser eficaces y seguros en pacientes con ERC. Requieren ajuste de dosis con 
 	    FG &lt; 50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> a excepción de la linagliptina, y aunque pueden emplearse en casos de ERC avanzada o terminal, la experiencia de uso en estos casos 
 	    es aún limitada.\n
@@ -165,8 +168,7 @@
 	    eliminación renal. En estos casos son preferibles aquellas con menor excreción renal (atorvastatina, fluvastatina y pitavastatina). Dentro de este 
 	    grupo fluvastatina y pitavastatina son las que menos interacciones farmacológicas presentan, en caso de paciente polimedicados.\n\n
 	    - En pacientes con FG &lt; 60 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, la dosis de &lt;b>fenobitrato&lt;/b> debe reducirse a la mitad, y no se aconseja su uso 
-	    si el FG &lt; 50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>. Para pacientes con en monoterapia hipolilpemiante, se aconseja &lt;b>gemfibrozilo&lt;/b>. La dosis 
-	    habitual es de 600 mg/día, y puede utilizarse en pacientes con FG entre 15-59 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, desaconsejándose su uso si 
+	    si el FG &lt; 50 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>. Para pacientes con en monoterapia hipolilpemiante, se aconseja &lt;b>gemfibrozilo&lt;/b>. Puede utilizarse en pacientes con FG entre 15-59 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, desaconsejándose su uso si 
 	    el FG es &lt; 15 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>.\n\n
 	    - &lt;b>Ezetimiba&lt;/b> no requiere ajuste de dosis en insuficiencia renal.\n\n
 		- El uso de &lt;b>ácidos grasos omega-3&lt;/b> es una alternativa para el tratamiento de la hipertrigliceridemia.\n\n
@@ -176,14 +178,13 @@
 	</string>
 	<string name="recomendacion5title">Valorar antiagregación.</string>
 	<string name="recomendacion5txt">Individualizar el tratamiento con antiagregantes. Indicado según las guías KDIGO en pacientes con ERC con riesgo de 
-	    complicaciones ateroscleróticas siempre y cuando su riesgo de sangrado no supere el beneficio esperado. No deberá superarse la dosis de 100 mg/día de ácido 
-	    acetilsalicílico.</string>
+	    complicaciones ateroscleróticas siempre y cuando su riesgo de sangrado no supere el beneficio esperado.</string>
 	<string name="recomendacion6title">Tratamiento de la hiperuricemia.</string>
 	<string name="recomendacion6txt">Las guías clínicas actuales no recomiendan el tratamiento de la hiperuricemia, aunque algunos autores recomiendan el 
 	    tratamiento de la hiperuricemia asintomática con alopurinol sólo en los pacientes con ERC, especialmente con concentraciones de ácido úrico mayor de 
 	    8 mg/dL.\n\nEl uso de &lt;b>alopurinol&lt;/b> junto a diuréticos tiazídicos aumenta el riesgo de hipersensibilidad especialmente en paciente con 
 	    insuficiencia renal. &lt;light>No obstante, no es necesario ajustarlo a función renal, aunque es recomendable iniciar el tratamiento 
-	    con dosis bajas de no más de 100 mg/día.&lt;/light>\n\n
+	    con dosis bajas.&lt;/light>\n\n
 	    La &lt;b>colchicina&lt;/b> está indicada en el tratamiento del ataque agudo de gota. En pacientes con FG entre 30 y 50 ml/min/1.73m
 	    &lt;sup>&lt;small>2&lt;/small>&lt;/sup> debe reducirse la dosis. Por debajo de 30 ml/min/1.73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> está 
 	    contraindicado su uso.\n\n
@@ -525,7 +526,7 @@
 	<string name="varon">Varón</string>
 	<string name="mujer">Mujer</string> 
 	
-	<string name="desc_explain" formatted="false">&#37;s de &#37;d años de edad, con FGe por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> y por CDK EPI &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, con cociente albuminuria/creatinina de 
+	<string name="desc_explain" formatted="false">&#37;s de &#37;d años de edad, con FGe por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup> y por CKD EPI &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>, con cociente albuminuria/creatinina de 
 	    &#37;s mg/g, que presenta parámetros de &lt;b>Enfermedad Renal Crónica estadio &#37;s&lt;/b> (FG por MDRD-IDMS &#37;s ml/min/1,73m&lt;sup>&lt;small>2&lt;/small>&lt;/sup>) 
 	    &lt;b>&#37;s&lt;/b> (cociente albúmina/creatinina &#37;s mg/g) según la clasificación pronóstica de KDIGO de 2012 (ver tabla más abajo).\n\nSe recomienda &lt;b>&#37;s&lt;/b>.
 	</string>

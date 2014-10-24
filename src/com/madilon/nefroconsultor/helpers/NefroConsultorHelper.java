@@ -5,11 +5,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.madilon.nefroconsultor.R;
 import com.madilon.nefroconsultor.commons.Globals;
@@ -32,8 +34,11 @@ public class NefroConsultorHelper {
         }
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setDataAndType(Uri.parse("file://" + context.getFilesDir() + "/" + newFileName), "application/pdf");
-
-        context.startActivity(intent);
+        try {
+        	context.startActivity(intent);
+        } catch (ActivityNotFoundException exception) {
+        	Toast.makeText(context, R.string.noPdfApp, Toast.LENGTH_LONG).show();
+        }
     }
 
     private static void copyFile(InputStream in, OutputStream out) throws IOException {

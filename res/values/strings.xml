@@ -71,8 +71,8 @@
 	<string name="recomendaciones">RECOMENDACIONES</string>
 	<string name="remitirVsNoRemitir">VALORAR REMITIR A NEFROLOGÍA VS. SEGUIMIENTO POR MÉDICO DE AP</string>
 	<string name="remitir">REMITIR AL ESPECIALISTA EN NEFROLOGÍA</string>
-	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado descenso del FG &lt; 30 ml/min/1,73m<sup><small>2</small></sup> en 2 determinaciones durante al menos 3 meses</string>
-	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA si se ha confirmado albuminuria > 300 mg/g en al menos 2 ocasiones durante al menos 3 meses</string>
+	<string name="remitirCaso1">REMITIR AL ESPECIALISTA EN NEFROLOGÍA</string>
+	<string name="remitirCaso2">REMITIR AL ESPECIALISTA EN NEFROLOGÍA. Se recomienda confirmar cociente albúmina/creatinina > 300 mg/g en al menos 2 ocasiones.</string>
 	<string name="noRemitir">SEGUIMIENTO POR MÉDICO DE AP</string>
 	<string name="noRemitirCaso1Subtitle">En pacientes mayores de 80 años con FGe 20&#8211;30 ml/min/1.73m<sup><small>2</small></sup> se recomienda remitir a nefrología si existe progresión renal, albuminuria > 300 mg/g, existen signos de alarma o existe planteamiento de tratamiento sustitutivo renal.</string>
 	<string name="noRemitirCaso1Desc">Dado que la progresión de la enfermedad renal crónica en población anciana, es muy poco frecuente se puede aceptar que los 
